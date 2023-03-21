@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="header bg-white bg-opacity-50 shadow-lg flex justify-center sticky top-0 items-center z-1 px-10 py-8 sm:p-5 lg:pr-16"
+	class="header bg-white bg-opacity-50 shadow-lg flex justify-center sticky top-0 items-center z-10 px-10 py-8 sm:p-5 lg:pr-16"
 >
 	<!-- style:background={`url(${bgImage})`} -->
 	<div class="flex justify-between w-full max-w-[1000px]">
