@@ -6,12 +6,12 @@
 		title: string,
 		description: string,
 		buttonText: string,
-		buttonUrl: string;
+		link: string;
 </script>
 
 <a
 	class="flex flex-col w-full shadow-lg rounded-md overflow-hidden hover:scale-[103%] hover:shadow-2xl transition-all duration-200 group"
-	href="/"
+	href={link}
 >
 	<img src={imageUrl} alt={imageDescription} class="max-h-[150px] object-cover" />
 	<div class="p-5">

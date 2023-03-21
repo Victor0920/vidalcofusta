@@ -7,7 +7,7 @@ export const gallery: CardType[] = [
 		description:
 			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
 		buttonText: 'Más detalles',
-		buttonUrl: '/galeria/puerta',
+		link: '/galeria/puerta',
 		imageUrl: woodImage,
 		imageDescription: 'Puerta de madera'
 	},
@@ -16,7 +16,7 @@ export const gallery: CardType[] = [
 		description:
 			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
 		buttonText: 'Más detalles',
-		buttonUrl: '/galeria/puerta',
+		link: '/galeria/puerta',
 		imageUrl: woodImage,
 		imageDescription: 'Puerta de madera'
 	},
@@ -25,7 +25,7 @@ export const gallery: CardType[] = [
 		description:
 			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
 		buttonText: 'Más detalles',
-		buttonUrl: '/galeria/puerta',
+		link: '/galeria/puerta',
 		imageUrl: woodImage,
 		imageDescription: 'Puerta de madera'
 	},
@@ -34,7 +34,7 @@ export const gallery: CardType[] = [
 		description:
 			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
 		buttonText: 'Más detalles',
-		buttonUrl: '/galeria/puerta',
+		link: '/galeria/puerta',
 		imageUrl: woodImage,
 		imageDescription: 'Puerta de madera'
 	},
@@ -43,7 +43,7 @@ export const gallery: CardType[] = [
 		description:
 			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
 		buttonText: 'Más detalles',
-		buttonUrl: '/galeria/puerta',
+		link: '/galeria/puerta',
 		imageUrl: woodImage,
 		imageDescription: 'Puerta de madera'
 	}
