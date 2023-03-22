@@ -1,15 +1,17 @@
 <script lang="ts">
 	import { Card, PageIntro, PageSection } from '$lib/components';
 	import type { PageData } from './$types';
-	import woodImg from '$lib/assets/wood.jpeg';
+	import carpentryImg from '$lib/assets/carpentry2.jpeg';
 
 	export let data: PageData;
 
 	$: gallery = data.gallery;
 </script>
 
+<!-- Change the PageIntro to a the layout file of all pages -->
+
 <PageIntro
-	imageUrl={woodImg}
+	imageUrl={carpentryImg}
 	imageDescription="Wood background"
 	title="Galería"
 	subtitle="Una recopliación de mis trabajos"
