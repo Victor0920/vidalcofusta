@@ -4,8 +4,14 @@
 	import { Header, Footer } from '$lib/components';
 </script>
 
-<Header />
+<svelte:head>
+	<title>Vidalco Fusta</title>
+	<meta name="description" content="Proyectos de madera a medida." />
+</svelte:head>
 
-<slot />
+<Header />
+<main>
+	<slot />
+</main>
 
 <Footer />
