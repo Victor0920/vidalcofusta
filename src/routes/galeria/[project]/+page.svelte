@@ -1,4 +1,6 @@
 <script lang="ts">
+	import PageSection from '$lib/components/layout/pageSection.svelte';
+	import SectionType from '$lib/components/sectionType.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -9,13 +11,7 @@
 </script>
 
 {#each sections as section}
-	{#if section.type === 'ImageAndText'}
-		<p>{section.type}</p>
-		<pre>{JSON.stringify(section)}</pre>
-	{/if}
-
-	{#if section.type === 'ImageCaroussel'}
-		<p>{section.type}</p>
-		<pre>{JSON.stringify(section)}</pre>
-	{/if}
+	<PageSection background={section.background}>
+		<SectionType {section} />
+	</PageSection>
 {/each}

@@ -8,14 +8,11 @@
 	$: gallery = data.gallery;
 </script>
 
-<!-- Change the PageIntro to a the layout file of all pages -->
-
 <PageIntro
 	imageUrl={carpentryImg}
 	imageDescription="Wood background"
 	title="Galería"
 	subtitle="Una recopliación de mis trabajos"
-	colorAccent="rgba(2, 122, 213, 0.5)"
 />
 
 <PageSection>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PageIntro from '$lib/components/layout/pageIntro.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -14,7 +15,13 @@
 	<meta name="description" content={description} />
 </svelte:head>
 
-<h1>{title}</h1>
-<p>{description}</p>
+<PageIntro
+	imageUrl={currentProject.meta.imageUrl}
+	imageDescription="Wood background"
+	title={currentProject.meta.title}
+	subtitle={currentProject.meta.description}
+/>
 
-<slot />
+<div class="bg-white pb-96">
+	<slot />
+</div>

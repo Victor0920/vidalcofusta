@@ -1,4 +1,4 @@
-import projects from '$lib/content/projects';
+import projects from '$lib/content/pages/projects';
 import type { LayoutServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 
