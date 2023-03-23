@@ -1,4 +1,4 @@
-export type ProjectPageType = {
+export type PageType = {
 	name: string;
 	meta: Meta;
 	sections: PageSectionType[];
@@ -7,6 +7,8 @@ export type ProjectPageType = {
 type Meta = {
 	title: string;
 	description: string;
+	imageUrl: string;
+	imageUrlReduced?: string;
 };
 
 export type PageSectionType = ImageAndTextSection | ImageCarouselSection;
