@@ -1,11 +1,13 @@
-import type { ProjectPageType } from '$lib/types';
+import type { PageType } from '$lib/types';
+import puertaImg from '$lib/assets/puerta.jpeg';
 
-const puerta: ProjectPageType = {
+const puerta: PageType = {
 	name: 'puerta',
 	meta: {
 		title: 'Puerta de madera',
 		description:
-			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.'
+			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
+		imageUrl: puertaImg
 	},
 	sections: [
 		{
