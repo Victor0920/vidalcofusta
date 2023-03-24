@@ -2,12 +2,15 @@ import type { PageType } from '$lib/types';
 import puertaImg from '$lib/assets/puerta.jpeg';
 
 const puerta: PageType = {
+	id: 'p3',
 	name: 'puerta',
+	url: '/galeria/puerta',
 	meta: {
 		title: 'Puerta de madera',
 		description:
 			'Puerta a base de palets. Fabricada Únicamente de madera, incluídas las bisagras. Sin un solo tornillo.',
-		imageUrl: puertaImg
+		imageUrl: puertaImg,
+		imageDescription: 'Puerta de entrada de palets de madera'
 	},
 	sections: [
 		{

@@ -1,20 +1,25 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { PageIntro, PageSection } from '$lib/components';
 	import SectionType from '$lib/components/sectionType.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+	const whoAmIPage = data.page;
 
-	const whoAmIPage = data.whoAmI;
-	const sections = whoAmIPage.sections;
+	$: meta = whoAmIPage.meta;
+	$: sections = whoAmIPage.sections;
 </script>
 
+<svelte:head>
+	<title>{meta.title} - Vidalco Fusta</title>
+	<meta name="description" content={meta.description} />
+</svelte:head>
+
 <PageIntro
-	imageUrl={whoAmIPage.meta.imageUrl}
-	imageDescription={whoAmIPage.meta.title}
-	title={whoAmIPage.meta.title}
-	subtitle={whoAmIPage.meta.description}
+	imageUrl={meta.imageUrl}
+	imageDescription={meta.imageDescription}
+	title={meta.title}
+	subtitle={meta.description}
 />
 
 {#each sections as section}

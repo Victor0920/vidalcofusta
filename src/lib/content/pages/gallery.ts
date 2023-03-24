@@ -1,15 +1,15 @@
 import type { PageType } from '$lib/types';
-import toolboxImg from '$lib/assets/carpentry-box.png';
+import galleryImg from '$lib/assets/carpentry2.jpeg';
 
 const contactPage: PageType = {
-	id: 'a2',
-	name: 'contacto',
-	url: '/contacto',
+	id: 'a3',
+	name: 'galeria',
+	url: '/galeria',
 	meta: {
-		title: 'Contacto',
-		description: '¡Cuéntame tu idea y realizaré un presupuesto sin compromiso!',
-		imageUrl: toolboxImg,
-		imageDescription: 'Caja de herramientas'
+		title: 'Galería',
+		description: 'Una recopliación de mis trabajos',
+		imageUrl: galleryImg,
+		imageDescription: 'Carpintero marcando con un lápiz sobre madera'
 	},
 	sections: [
 		{
@@ -26,6 +26,11 @@ const contactPage: PageType = {
 			content: {
 				images: ['img 1', 'img 2']
 			}
+		},
+		{
+			type: 'Cards',
+			background: '#ffffff',
+			content: []
 		}
 	]
 };

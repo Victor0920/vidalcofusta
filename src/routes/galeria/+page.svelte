@@ -1,24 +1,28 @@
 <script lang="ts">
-	import { Card, PageIntro, PageSection } from '$lib/components';
+	import { PageIntro, PageSection, SectionType } from '$lib/components';
 	import type { PageData } from './$types';
-	import carpentryImg from '$lib/assets/carpentry2.jpeg';
 
 	export let data: PageData;
+	const galleryPage = data.page;
 
-	$: gallery = data.gallery;
+	$: meta = galleryPage.meta;
+	$: sections = galleryPage.sections;
 </script>
 
+<svelte:head>
+	<title>{meta.title} - Vidalco Fusta</title>
+	<meta name="description" content={meta.description} />
+</svelte:head>
+
 <PageIntro
-	imageUrl={carpentryImg}
-	imageDescription="Wood background"
-	title="Galería"
-	subtitle="Una recopliación de mis trabajos"
+	imageUrl={meta.imageUrl}
+	imageDescription={meta.imageDescription}
+	title={meta.title}
+	subtitle={meta.description}
 />
 
-<PageSection>
-	<div class="grid grid-cols-3 sm:grid-cols-1 gap-5">
-		{#each gallery as card}
-			<Card {...card} />
-		{/each}
-	</div>
-</PageSection>
+{#each sections as section}
+	<PageSection background={section.background}>
+		<SectionType {section} />
+	</PageSection>
+{/each}

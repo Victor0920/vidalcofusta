@@ -7,7 +7,7 @@
 >
 	<img
 		src={imageUrl}
-		alt="Hombre realizando tareas de carpintería"
+		alt={imageDescription}
 		class="w-full object-cover fixed top-0 left-0 h-[500px]"
 	/>
 	<div class="fixed top-0 left-0 w-full h-full bg-black opacity-30" />

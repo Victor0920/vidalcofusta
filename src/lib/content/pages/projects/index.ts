@@ -1,3 +1,3 @@
 import { default as puerta } from './puerta';
 
-export default { data: [puerta, puerta, puerta, puerta, puerta, puerta, puerta] };
+export const pages = [puerta, puerta, puerta, puerta, puerta, puerta, puerta];
