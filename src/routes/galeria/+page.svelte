@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PageIntro, PageSection, SectionType } from '$lib/components';
+	import { PageIntro, PageSection, Section } from '$lib/components';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -23,6 +23,6 @@
 
 {#each sections as section}
 	<PageSection background={section.background}>
-		<SectionType {section} />
+		<Section {section} />
 	</PageSection>
 {/each}

@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { PageIntro, PageSection } from '$lib/components';
-	import SectionType from '$lib/components/sectionType.svelte';
+	import { PageIntro, PageSection, Section } from '$lib/components';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -24,6 +23,6 @@
 
 {#each sections as section}
 	<PageSection background={section.background}>
-		<SectionType {section} />
+		<Section {section} />
 	</PageSection>
 {/each}

@@ -7,4 +7,4 @@ export { default as Card } from './sections/card.svelte';
 export { default as Cards } from './sections/cards.svelte';
 export { default as Text } from './sections/text.svelte';
 
-export { default as SectionType } from './sectionType.svelte';
+export { default as Section } from './section.svelte';

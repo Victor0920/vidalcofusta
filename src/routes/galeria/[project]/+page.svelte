@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PageSection, SectionType, PageIntro } from '$lib/components';
+	import { PageSection, Section, PageIntro } from '$lib/components';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -12,6 +12,7 @@
 <svelte:head>
 	<title>{meta.title} - Vidalco Fusta</title>
 	<meta name="description" content={meta.description} />
+	<meta property="og:image" content={meta.imageUrlReduced} />
 </svelte:head>
 
 <PageIntro
@@ -24,7 +25,7 @@
 <div class="bg-white pb-96">
 	{#each sections as section}
 		<PageSection background={section.background}>
-			<SectionType {section} />
+			<Section {section} />
 		</PageSection>
 	{/each}
 </div>
