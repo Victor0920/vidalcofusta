@@ -17,7 +17,9 @@ const whoAmIPage: PageType = {
 			background: '#f3f1e9',
 			content: {
 				image: 'imgUrl',
-				texts: ['first text', 'second text']
+				imageDescription: 'imgUrl',
+				imagePosition: 'start',
+				text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
 			}
 		},
 		{
