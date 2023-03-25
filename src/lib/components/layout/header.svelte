@@ -32,11 +32,11 @@
 	}`}
 	class:opaque-backdrop-filter={hasScrolled}
 	use:hasScrolledFromTop
-	on:hasScrolled={(e) => (hasScrolled = e.detail)}
+	on:has_scrolled={(e) => (hasScrolled = e.detail)}
 	use:clickOutside
 	on:click_outside={() => (showDropdownMenu = false)}
 >
-	<div class="flex justify-between w-full max-w-[1000px]">
+	<div class="flex justify-between w-full max-w-[900px]">
 		<a href="/" on:click={() => (showDropdownMenu = false)}>
 			<Logo
 				iconColor={hasScrolled ? '#3080c2' : '#9fbcff'}

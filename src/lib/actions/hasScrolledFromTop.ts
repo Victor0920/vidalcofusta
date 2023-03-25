@@ -1,6 +1,6 @@
 export const hasScrolledFromTop = (node: any) => {
 	const checkIfScrolled = () => {
-		node.dispatchEvent(new CustomEvent('hasScrolled', { detail: window?.scrollY > 0 }));
+		node.dispatchEvent(new CustomEvent('has_scrolled', { detail: window?.scrollY > 0 }));
 	};
 
 	window.addEventListener(
