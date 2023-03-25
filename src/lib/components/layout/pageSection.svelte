@@ -3,7 +3,7 @@
 </script>
 
 <div class="page-section w-full p-10 sm:px-5 flex justify-center overflow-hidden" style:background>
-	<div class="w-full max-w-[1000px]">
+	<div class="w-full max-w-[900px]">
 		<slot />
 	</div>
 </div>
