@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageSectionType } from '$lib/types';
-	import { Card } from './';
+	import { Cards, Text } from './';
 
 	export let section: PageSectionType;
 </script>
@@ -16,9 +16,9 @@
 {/if}
 
 {#if section.type === 'Cards'}
-	<div class="grid grid-cols-3 sm:grid-cols-1 gap-5">
-		{#each section.content as card}
-			<Card {...card} />
-		{/each}
-	</div>
+	<Cards cards={section.content} />
+{/if}
+
+{#if section.type === 'Text'}
+	<Text text={section.content} />
 {/if}

@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { ArrowheadRightIcon } from '$lib/assets/icons';
+	import type { CardType } from '$lib/types';
 
-	export let imageUrl: string,
-		imageDescription: string,
-		title: string,
-		description: string,
-		buttonText: string,
-		url: string;
+	export let card: CardType;
+
+	let { imageUrl, imageDescription, title, description, buttonText, url } = card;
 </script>
 
 <a

@@ -13,21 +13,6 @@ const contactPage: PageType = {
 	},
 	sections: [
 		{
-			type: 'ImageAndText',
-			background: '#f3f1e9',
-			content: {
-				image: 'imgUrl',
-				texts: ['first text', 'second text']
-			}
-		},
-		{
-			type: 'ImageCaroussel',
-			background: '#ffffff',
-			content: {
-				images: ['img 1', 'img 2']
-			}
-		},
-		{
 			type: 'Cards',
 			background: '#ffffff',
 			content: []

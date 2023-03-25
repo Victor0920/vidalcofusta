@@ -1,4 +1,4 @@
-import type { CardType } from './card.type';
+import type { CardType, TextType } from './';
 
 export type PageType = {
 	id: string;
@@ -16,7 +16,11 @@ type Meta = {
 	imageDescription: string;
 };
 
-export type PageSectionType = ImageAndTextSection | ImageCarouselSection | CardsSection;
+export type PageSectionType =
+	| ImageAndTextSection
+	| ImageCarouselSection
+	| CardsSection
+	| TextSection;
 
 type ImageAndTextSection = {
 	type: 'ImageAndText';
@@ -39,4 +43,10 @@ type CardsSection = {
 	type: 'Cards';
 	background?: string;
 	content: CardType[];
+};
+
+type TextSection = {
+	type: 'Text';
+	background?: string;
+	content: TextType;
 };
