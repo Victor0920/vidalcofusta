@@ -8,6 +8,8 @@ export const load: PageServerLoad = async ({ route }) => {
 
 	const projectPages = await findAllProjectPages();
 
+	// This will need to be change to a <Projects> component to be reutilizable in other parts of the site
+
 	const projectsCards: CardType[] = projectPages.map((project) => ({
 		title: project.meta.title,
 		description: project.meta.description,
