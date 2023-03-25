@@ -1,15 +1,23 @@
 <script lang="ts">
 	import type { TextType } from '$lib/types';
 
-	export let text: TextType;
+	export let content: TextType;
 
-	const { title, paragraphs, textColor } = text;
+	const { title, paragraphs, textColor, showLine = true } = content;
 </script>
 
-<div class="">
-	<h1 class="relative text-xl font-bold mb-7 sm:text-center" style:color={textColor}>
-		{title.text}
-	</h1>
+<div class="flex flex-col justify-center w-full h-full">
+	{#if title}
+		<h1
+			class={`relative font-bold  sm:text-center ${showLine ? "after:content-[''] mb-7" : 'mb-4'} ${
+				title.size === 'large' ? 'text-3xl' : title.size === 'medium' ? 'text-2xl' : 'text-xl'
+			}`}
+			style:color={textColor}
+		>
+			{title.text}
+		</h1>
+	{/if}
+
 	{#each paragraphs as paragraph}
 		<p class="mb-2 sm:text-center">{paragraph}</p>
 	{/each}
@@ -17,7 +25,6 @@
 
 <style>
 	h1::after {
-		content: '';
 		height: 1px;
 		width: 100%;
 		background: #eeeeee;
