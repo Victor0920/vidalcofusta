@@ -14,6 +14,21 @@ const puerta: PageType = {
 	},
 	sections: [
 		{
+			type: 'Text',
+			background: '#ffffff',
+			content: {
+				title: {
+					type: 'h1',
+					text: 'Reclicablidad y reusabilidad para maderas que podrían ser cenizas'
+				},
+				paragraphs: [
+					'Cillum veniam est culpa adipisicing ullamco excepteur fugiat. Occaecat do ipsum cupidatat proident nisi deserunt qui quis in aliqua.',
+					'Do officia eiusmod dolor magna ipsum id consectetur ut dolore. Nulla fugiat irure sit esse magna eu. Deserunt quis pariatur mollit ex officia ut ad aute qui nulla reprehenderit.'
+				],
+				textColor: '#000000'
+			}
+		},
+		{
 			type: 'ImageAndText',
 			background: '#f3f1e9',
 			content: {
