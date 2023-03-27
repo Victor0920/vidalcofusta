@@ -37,7 +37,7 @@ const puerta: PageType = {
 			type: 'ImageAndText',
 			background: '#f3f1e9',
 			content: {
-				image: puertaImg3,
+				imageUrl: puertaImg3,
 				imageDescription: 'Estructura de la puerta',
 				imagePosition: 'start',
 				text: {
@@ -57,7 +57,7 @@ const puerta: PageType = {
 			type: 'ImageAndText',
 			background: '#ffffff',
 			content: {
-				image: puertaImg2,
+				imageUrl: puertaImg2,
 				imageDescription: 'some image description',
 				imagePosition: 'end',
 				text: {
@@ -75,9 +75,38 @@ const puerta: PageType = {
 		},
 		{
 			type: 'ImageCaroussel',
-			background: '#0abcse9',
+			background: '#f3f1e9',
 			content: {
-				images: ['img 1', 'img 2']
+				images: [
+					{
+						imageUrl: puertaImg,
+						imageDescription: 'Some description'
+					},
+					{
+						imageUrl: puertaImg2,
+						imageDescription: 'Some description'
+					},
+					{
+						imageUrl: puertaImg3,
+						imageDescription: 'Some description'
+					},
+					{
+						imageUrl: puertaImg2,
+						imageDescription: 'Some description'
+					},
+					{
+						imageUrl: puertaImg2,
+						imageDescription: 'Some description'
+					},
+					{
+						imageUrl: puertaImg2,
+						imageDescription: 'Some description'
+					},
+					{
+						imageUrl: puertaImg2,
+						imageDescription: 'Some description'
+					}
+				]
 			}
 		}
 	]

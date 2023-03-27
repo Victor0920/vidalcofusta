@@ -16,19 +16,19 @@ const contactPage: PageType = {
 			type: 'ImageAndText',
 			background: '#f3f1e9',
 			content: {
-				image: 'imgUrl',
+				imageUrl: 'imgUrl',
 				imageDescription: 'imgUrl',
 				imagePosition: 'start',
 				text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
 			}
-		},
-		{
-			type: 'ImageCaroussel',
-			background: '#ffffff',
-			content: {
-				images: ['img 1', 'img 2']
-			}
 		}
+		// {
+		// 	type: 'ImageCaroussel',
+		// 	background: '#ffffff',
+		// 	content: {
+		// 		images: ['img 1', 'img 2']
+		// 	}
+		// }
 	]
 };
 

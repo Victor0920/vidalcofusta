@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageSectionType } from '$lib/types';
-	import { Cards, Text } from '.';
-	import ImageAndText from './sections/imageAndText.svelte';
+	import { Cards, Text, ImageAndText, ImageCarrousel } from '.';
 
 	export let section: PageSectionType;
 </script>
@@ -11,8 +10,7 @@
 {/if}
 
 {#if section.type === 'ImageCaroussel'}
-	<p>{section.type}</p>
-	<pre>{JSON.stringify(section)}</pre>
+	<ImageCarrousel content={section.content} />
 {/if}
 
 {#if section.type === 'Cards'}

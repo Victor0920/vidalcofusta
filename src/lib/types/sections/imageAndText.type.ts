@@ -1,7 +1,7 @@
 import type { TextType } from './text.type';
 
 export type ImageAndTextType = {
-	image: string;
+	imageUrl: string;
 	imageDescription: string;
 	imagePosition: 'start' | 'end';
 	text: TextType;
