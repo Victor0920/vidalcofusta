@@ -1,5 +1,5 @@
 <script>
-	import { PageSection } from '$lib/components';
+	import { PageSection, ColumnLayout2 } from '$lib/components';
 	import carpentryImg from '$lib/assets/carpentry.jpeg';
 </script>
 
@@ -22,4 +22,7 @@
 
 <PageSection>
 	<div class="h-[2000px]" />
+	<ColumnLayout2 columns={2}>
+		<p>hey</p>
+	</ColumnLayout2>
 </PageSection>

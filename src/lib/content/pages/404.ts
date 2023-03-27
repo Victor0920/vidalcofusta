@@ -12,16 +12,16 @@ const NotFoundPage: PageType = {
 		imageDescription: 'Hombre lijando madera'
 	},
 	sections: [
-		// {
-		// 	type: 'ImageAndText',
-		// 	background: '#f3f1e9',
-		// 	content: {
-		// 		image: 'imgUrl',
-		// 		imageDescription: 'imgUrl',
-		// 		imagePosition: 'start',
-		// 		text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
-		// 	}
-		// }
+		{
+			type: 'ImageAndText',
+			background: '#f3f1e9',
+			content: {
+				imageUrl: 'imgUrl',
+				imageDescription: 'imgUrl',
+				imagePosition: 'start',
+				text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
+			}
+		}
 	]
 };
 
