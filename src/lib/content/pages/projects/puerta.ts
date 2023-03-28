@@ -91,7 +91,7 @@ const puerta: PageType = {
 						imageDescription: 'Some description'
 					},
 					{
-						imageUrl: puertaImg2,
+						imageUrl: puertaImg,
 						imageDescription: 'Some description'
 					},
 					{
@@ -99,11 +99,7 @@ const puerta: PageType = {
 						imageDescription: 'Some description'
 					},
 					{
-						imageUrl: puertaImg2,
-						imageDescription: 'Some description'
-					},
-					{
-						imageUrl: puertaImg2,
+						imageUrl: puertaImg3,
 						imageDescription: 'Some description'
 					}
 				]

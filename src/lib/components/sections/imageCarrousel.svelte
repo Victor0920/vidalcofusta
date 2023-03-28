@@ -3,16 +3,88 @@
 	import type { ImageCarrouselType } from '$lib/types/sections/imageCarrousel.type';
 
 	export let content: ImageCarrouselType;
-
 	let { images } = content;
 
-	let expandedIndex: number;
+	let expandedIndex: number = -1;
+
+	let scrollableProperties: any;
+
+	$: scrollIsAtStart = scrollableProperties?.scrollLeft === 0 || !scrollableProperties;
+	$: scrollIsAtEnd =
+		scrollableProperties?.scrollLeft >
+		scrollableProperties?.scrollWidth - scrollableProperties?.clientWidth - 20;
+
+	$: console.log(
+		scrollableProperties?.scrollLeft,
+		scrollableProperties?.scrollWidth,
+		scrollableProperties?.clientWidth
+	);
+
+	const scroll = (direction: 'right' | 'left') => {
+		const scrollableRow = document.getElementById('scrollableRow');
+
+		if (scrollableRow) {
+			scrollableRow.scrollTo({
+				left:
+					direction === 'right' ? scrollableRow.scrollLeft + 300 : scrollableRow.scrollLeft - 300,
+				behavior: 'smooth'
+			});
+		}
+	};
+
+	const changeImage = (event: any) => {
+		event.preventDefault();
+		const direction = event.code === 'ArrowRight' ? 'right' : 'ArrowRight' ? 'left' : null;
+
+		if (direction === 'right') {
+			if (expandedIndex < images.length - 1) {
+				expandedIndex += 1;
+			} else {
+				expandedIndex = images.length - 1;
+			}
+		} else {
+			if (expandedIndex > 0) {
+				expandedIndex -= 1;
+			} else {
+				expandedIndex = 0;
+			}
+		}
+	};
 </script>
 
-<svelte:window on:keydown={(e) => (e.code === 'Escape' ? (expandedIndex = -1) : null)} />
+<svelte:window
+	on:keydown={(e) =>
+		e.code === 'Escape' ? (expandedIndex = -1) : expandedIndex != -1 ? changeImage(e) : null}
+/>
 
-<div class="w-full overflow-scroll">
-	<div class="flex gap-5 w-max bg-transparent -m-5 p-5">
+{#if !scrollIsAtStart}
+	<div class="absolute top-0 left-0 h-full w-10 z-10 flex items-center justify-start pl-3 group">
+		<div
+			class="p-2 rounded-full bg-black bg-opacity-50 cursor-pointer"
+			on:click={() => scroll('left')}
+		>
+			<ArrowIcon color="#ffffff" position="left" width={30} />
+		</div>
+	</div>
+{/if}
+
+{#if !scrollIsAtEnd}
+	<div class="absolute top-0 right-0 h-full w-10 z-10 flex items-center justify-end pr-3 group">
+		<div
+			class="p-2 rounded-full bg-black bg-opacity-50 cursor-pointer"
+			on:click={() => scroll('right')}
+		>
+			<ArrowIcon color="#ffffff" position="right" width={30} />
+		</div>
+	</div>
+{/if}
+
+<div
+	class="w-full overflow-x-scroll overflow-y-hidden -m-5"
+	id="scrollableRow"
+	on:scroll={(e) => (scrollableProperties = e.target)}
+>
+	<div class="flex gap-5 w-max bg-transparent  p-5">
 		{#each images as image, i}
 			<div
 				class="flex items-center rounded-xl overflow-hidden shadow-lg shadow-zinc-400 h-[200px] w-[300px] sm:w-[70vw] relative group"
@@ -33,15 +105,16 @@
 			{#if expandedIndex === i}
 				<div
 					class={`fixed top-0 left-0 w-screen h-screen z-40 flex items-center justify-center bg-black bg-opacity-70`}
+					on:click={() => (expandedIndex = -1)}
 				>
 					<div class="w-max h-max relative">
 						{#if expandedIndex > 0}
 							<div
-								class="absolute top-0 left-0 h-full w-1/2 group flex items-center justify-start pl-3 group"
+								class="absolute top-0 left-0 h-full w-1/2 flex items-center justify-start pl-3 group"
+								on:click={() => (expandedIndex -= 1)}
 							>
 								<div
-									class="p-2 rounded-full bg-black bg-opacity-50 opacity-0 sm:opacity-100 group-hover:opacity-100 cursor-pointer"
-									on:click={() => (expandedIndex -= 1)}
+									class="p-2 rounded-full bg-black bg-opacity-50 opacity-30 sm:opacity-100 group-hover:opacity-100 cursor-pointer"
 								>
 									<ArrowIcon color="#ffffff" position="left" width={30} />
 								</div>
@@ -50,11 +123,11 @@
 
 						{#if expandedIndex < images.length - 1}
 							<div
-								class="absolute top-0 right-0 h-full w-1/2 group flex items-center justify-end pr-3 group"
+								class="absolute top-0 right-0 h-full w-1/2 flex items-center justify-end pr-3 group"
+								on:click={() => (expandedIndex += 1)}
 							>
 								<div
-									class="p-2 rounded-full bg-black bg-opacity-50 opacity-0 sm:opacity-100 group-hover:opacity-100 cursor-pointer"
-									on:click={() => (expandedIndex += 1)}
+									class="p-2 rounded-full bg-black bg-opacity-50 opacity-30 sm:opacity-100 group-hover:opacity-100 cursor-pointer"
 								>
 									<ArrowIcon color="#ffffff" position="right" width={30} />
 								</div>

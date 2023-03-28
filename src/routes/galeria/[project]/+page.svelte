@@ -22,7 +22,7 @@
 	subtitle={meta.description}
 />
 
-<div class="bg-white pb-96">
+<div class="bg-white">
 	{#each sections as section}
 		<PageSection background={section.background}>
 			<Section {section} />
