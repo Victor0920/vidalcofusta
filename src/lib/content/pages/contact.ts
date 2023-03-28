@@ -1,5 +1,5 @@
 import type { PageType } from '$lib/types';
-import toolboxImg from '$lib/assets/carpentry-box.png';
+import carpentryImg from '$lib/assets/carpentry4.jpg';
 
 const contactPage: PageType = {
 	id: 'a2',
@@ -8,7 +8,7 @@ const contactPage: PageType = {
 	meta: {
 		title: 'Contacto',
 		description: '¡Cuéntame tu idea y realizaré un presupuesto sin compromiso!',
-		imageUrl: toolboxImg,
+		imageUrl: carpentryImg,
 		imageDescription: 'Caja de herramientas'
 	},
 	sections: [
