@@ -21,14 +21,13 @@
 			<div class="flex justify-center">
 				<button
 					class="mx-2 sm:my-2 p-3 h-min w-min rounded-full flex justify-center border-2 border-[#ffffff4f] hover:border-[#ffffff] transition-all hover:scale-105"
-					on:click={() =>
-						window.open('https://wa.me/+34622881350?text=Hola,+buenos+días', '_blank')}
+					on:click={() => window.open('https://wa.me/+34622881350?text=Hola,+buenos+días')}
 				>
 					<WhatsappIcon color="#ffffff" width={35} />
 				</button>
 				<button
 					class="mx-2 sm:my-2 p-3 h-min w-min rounded-full flex justify-center border-2 border-[#ffffff4f] hover:border-[#ffffff] transition-all hover:scale-105"
-					on:click={() => window.open('mailto:vidalcofusta@gmail.com', '_blank')}
+					on:click={() => window.open('mailto:vidalcofusta@gmail.com')}
 				>
 					<MailIcon color="#ffffff" width={35} />
 				</button>
