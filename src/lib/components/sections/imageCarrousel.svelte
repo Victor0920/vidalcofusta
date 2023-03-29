@@ -79,12 +79,14 @@
 	</div>
 {/if}
 
+<!-- Arreglar lo de que se quede un espacio al final -->
+
 <div
-	class="w-full overflow-x-scroll overflow-y-hidden -m-5"
+	class="w-full overflow-x-scroll overflow-y-hidden"
 	id="scrollableRow"
 	on:scroll={(e) => (scrollableProperties = e.target)}
 >
-	<div class="flex gap-5 w-max bg-transparent  p-5">
+	<div class="flex gap-5 w-max bg-transparent px-3 py-5">
 		{#each images as image, i}
 			<div
 				class="flex items-center rounded-xl overflow-hidden shadow-lg shadow-zinc-400 h-[200px] w-[300px] sm:w-[70vw] relative group"

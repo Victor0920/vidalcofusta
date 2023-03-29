@@ -7,16 +7,16 @@
 <footer class="w-[100vw] h-5 shadow-lg">
 	<PageSection background="#33324e" pb={2}>
 		<div class="flex justify-between sm:flex-col">
-			<div class="flex flex-col sm:items-center sm:w-full sm:mb-6">
+			<div class="flex flex-col sm:items-center sm:w-full sm:mb-4">
 				<Logo iconColor="#9fbcff" lettersColor="#ffffff" />
-				<p class="w-full sm:text-center mt-auto sm:mt-6">622881350</p>
-				<p class="w-full sm:text-center">vidalcofusta@gmail.com</p>
+				<p class="mb-1 w-full sm:text-center mt-auto sm:mt-6">622 88 13 50</p>
+				<p class="mb-1 w-full sm:text-center">vidalcofusta@gmail.com</p>
 			</div>
-			<div class="sm:flex sm:flex-col sm:justify-center sm:w-full sm:mb-6">
+			<div class="sm:flex sm:flex-col sm:justify-center sm:w-full sm:mb-4">
 				<h1 class="sm:text-center font-bold text-xl mb-2">Dirección</h1>
-				<p class="sm:text-center">Calle Santa Lucía 31</p>
-				<p class="sm:text-center">03540, Alicante</p>
-				<p class="sm:text-center">España</p>
+				<p class="mb-1 sm:text-center">Calle Santa Lucía 31</p>
+				<p class="mb-1 sm:text-center">03540, Alicante</p>
+				<p class="mb-1 sm:text-center">España</p>
 			</div>
 			<div class="flex justify-center">
 				<button
@@ -46,7 +46,9 @@
 				</button>
 			</div>
 		</div>
-		<p class="w-full mt-14 text-center opacity-50">Vidalcofusta - {new Date().getFullYear()}</p>
+		<p class="mb-1 w-full mt-14 sm:mt-5 text-center opacity-50">
+			Vidalcofusta - {new Date().getFullYear()}
+		</p>
 	</PageSection>
 </footer>
 
