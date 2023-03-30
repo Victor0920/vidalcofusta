@@ -8,18 +8,43 @@
 </script>
 
 <a
-	class="flex flex-col w-full shadow-lg rounded-md overflow-hidden hover:scale-[103%] hover:shadow-2xl transition-all duration-200 group"
+	class="flex flex-col w-full shadow-lg rounded-md overflow-hidden hover:scale-[103%] hover:shadow-2xl bg-white transition-all duration-200 group"
 	href={url}
 >
-	<img src={imageUrl} alt={imageDescription} class="max-h-[150px] object-cover" />
-	<div class="p-5">
-		<h2 class="text-xl font-bold mb-3">{title}</h2>
-		<p class="mb-10">{description}</p>
-		<div class="mt-auto flex justify-between text-[#48466d]">
-			{buttonText}
-			<div class="group-hover:animate-bounce">
-				<ArrowheadRightIcon color="#48466d" />
-			</div>
+	{#if imageUrl}
+		<div class="shadow-sm">
+			<img src={imageUrl} alt={imageDescription} class="max-h-[150px] object-cover" />
 		</div>
+	{/if}
+
+	<div class="p-5 ">
+		{#if title}
+			<h2 class="text-xl font-bold mb-3">{title}</h2>
+		{/if}
+
+		{#if description}
+			<p class="mb-10">{description}</p>
+		{/if}
+
+		{#if buttonText}
+			<div class="mt-auto flex justify-between text-[#48466d]">
+				{buttonText}
+				<div class="group-hover:animate-bounce">
+					<ArrowheadRightIcon color="#48466d" />
+				</div>
+			</div>
+		{/if}
 	</div>
 </a>
+
+<style>
+	.image-container::after {
+		box-shadow: inset 0px -5px 10px 0 #00000020;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+</style>

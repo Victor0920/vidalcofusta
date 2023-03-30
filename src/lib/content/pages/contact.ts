@@ -1,5 +1,8 @@
 import type { PageType } from '$lib/types';
 import carpentryImg from '$lib/assets/carpentry4.jpg';
+import WhatsappImg from '$lib/assets/contact/whatsapp.png';
+import FacebookImg from '$lib/assets/contact/facebook.png';
+import GmailImg from '$lib/assets/contact/mail.png';
 
 const contactPage: PageType = {
 	id: 'a2',
@@ -7,28 +10,56 @@ const contactPage: PageType = {
 	url: '/contacto',
 	meta: {
 		title: 'Contacto',
-		description: '¡Cuéntame tu idea y realizaré un presupuesto sin compromiso!',
+		description: '¡Cuéntanos tu idea y realizaremos un presupuesto sin compromiso!',
 		imageUrl: carpentryImg,
 		imageDescription: 'Caja de herramientas'
 	},
 	sections: [
 		{
-			type: 'ImageAndText',
-			background: '#f3f1e9',
+			type: 'Text',
+			background: '#ffffff',
 			content: {
-				imageUrl: 'imgUrl',
-				imageDescription: 'imgUrl',
-				imagePosition: 'start',
-				text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
+				title: {
+					size: 'medium',
+					text: 'Comienza a imaginar...'
+				},
+				paragraphs: [
+					'No importa el tamaño de tu proyecto, contacta con nosotros por la vía que prefieras y te haremos un presupuesto sin compromiso totalmente personalizado.',
+					'Tus datos serán tratados con la máxima confidencialidad, sin importar que vía de contacto utilices.'
+				],
+				textColor: '#000000'
 			}
+		},
+		{
+			type: 'Cards',
+			background: '#f3f1e9',
+			content: [
+				{
+					imageUrl: WhatsappImg,
+					imageDescription: 'Whatsapp logo',
+					title: 'Whatsapp',
+					description: '+34 622 88 13 50',
+					buttonText: 'Envíanos un mensaje',
+					url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+				},
+				{
+					imageUrl: GmailImg,
+					imageDescription: 'Gmail logo',
+					title: 'Correo electrónico',
+					description: 'vidalcofusta@gmail.com',
+					buttonText: 'Envíanos un email',
+					url: 'mailto:vidalcofusta@gmail.com'
+				},
+				{
+					imageUrl: FacebookImg,
+					imageDescription: 'Facebook logo',
+					title: 'Facebook',
+					description: '@vidalco fusta',
+					buttonText: 'Envíanos un MD',
+					url: 'https://www.facebook.com/vidalcofusta'
+				}
+			]
 		}
-		// {
-		// 	type: 'ImageCaroussel',
-		// 	background: '#ffffff',
-		// 	content: {
-		// 		images: ['img 1', 'img 2']
-		// 	}
-		// }
 	]
 };
 
