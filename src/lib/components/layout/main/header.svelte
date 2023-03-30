@@ -8,8 +8,8 @@
 
 	const navbarItems = [
 		{
-			text: 'Quien soy',
-			url: '/quien-soy'
+			text: 'Quienes somos',
+			url: '/quienes-somos'
 		},
 		{
 			text: 'Galería',

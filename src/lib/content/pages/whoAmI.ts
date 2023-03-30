@@ -3,8 +3,8 @@ import carpentryImg from '$lib/assets/carpentry3.jpeg';
 
 const whoAmIPage: PageType = {
 	id: 'a1',
-	name: 'quien-soy',
-	url: '/quien-soy',
+	name: 'quienes-somos',
+	url: '/quienes-somos',
 	meta: {
 		title: 'Hola, soy Jose',
 		description: 'Un apasionado de la carpintería...',
