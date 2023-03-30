@@ -23,25 +23,25 @@
 					class="mx-2 sm:my-2 p-3 h-min w-min rounded-full flex justify-center border-2 border-[#ffffff4f] hover:border-[#ffffff] transition-all hover:scale-105"
 					on:click={() => window.open('https://wa.me/+34622881350?text=Hola,+buenos+días')}
 				>
-					<WhatsappIcon color="#ffffff" width={35} />
+					<WhatsappIcon color="#ffffff" width={30} />
 				</button>
 				<button
 					class="mx-2 sm:my-2 p-3 h-min w-min rounded-full flex justify-center border-2 border-[#ffffff4f] hover:border-[#ffffff] transition-all hover:scale-105"
 					on:click={() => window.open('mailto:vidalcofusta@gmail.com')}
 				>
-					<MailIcon color="#ffffff" width={35} />
+					<MailIcon color="#ffffff" width={30} />
 				</button>
 				<button
 					class="mx-2 sm:my-2 p-3 h-min w-min rounded-full flex justify-center border-2 border-[#ffffff4f] hover:border-[#ffffff] transition-all hover:scale-105"
 					on:click={() => window.open('https://www.facebook.com/vidalcofusta', '_blank')}
 				>
-					<FacebookIcon color="#ffffff" width={35} />
+					<FacebookIcon color="#ffffff" width={30} />
 				</button>
 				<button
 					class="mx-2 sm:my-2 p-3 h-min w-min rounded-full flex justify-center border-2 border-[#ffffff4f] hover:border-[#ffffff] transition-all hover:scale-105"
 					on:click={() => window.open('https://www.instagram.com/vidalcofusta', '_blank')}
 				>
-					<InstagramIcon color="#ffffff" width={35} />
+					<InstagramIcon color="#ffffff" width={30} />
 				</button>
 			</div>
 		</div>
