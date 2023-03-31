@@ -15,7 +15,7 @@
 	<div
 		class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center sm:w-full sm:px-[5%] pb-5"
 	>
-		<h1 class="text-5xl text-white mb-5">{title}</h1>
-		<h4 class="text-2xl text-white sm:text-xl">{subtitle}</h4>
+		<h1 class="text-5xl text-white mb-5 text-shadow-black">{title}</h1>
+		<h4 class="text-2xl text-white sm:text-xl text-shadow-black">{subtitle}</h4>
 	</div>
 </div>
