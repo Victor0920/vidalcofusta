@@ -22,7 +22,7 @@
 />
 
 {#each sections as section}
-	<PageSection background={section.background}>
+	<PageSection properties={section.properties}>
 		<Section {section} />
 	</PageSection>
 {/each}

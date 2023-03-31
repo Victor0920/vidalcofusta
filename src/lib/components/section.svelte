@@ -14,7 +14,7 @@
 {/if}
 
 {#if section.type === 'Cards'}
-	<Cards cards={section.content} />
+	<Cards cards={section.content.cards} properties={section.content.properties} />
 {/if}
 
 {#if section.type === 'Text'}

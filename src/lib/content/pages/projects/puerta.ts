@@ -1,9 +1,9 @@
 import type { PageType } from '$lib/types';
 
 // Termporal. Las imágenes irán en un repo externo
-import puertaImg from '$lib/assets/puerta.jpeg';
-import puertaImg2 from '$lib/assets/puerta2.png';
-import puertaImg3 from '$lib/assets/puerta3.png';
+import puertaImg from '$lib/assets/puerta.webp';
+import puertaImg2 from '$lib/assets/puerta2.webp';
+import puertaImg3 from '$lib/assets/puerta3.webp';
 import puertaIcon from '$lib/assets/puerta_icon.png';
 
 const puerta: PageType = {
@@ -20,7 +20,7 @@ const puerta: PageType = {
 	sections: [
 		{
 			type: 'Text',
-			background: '#ffffff',
+			properties: { background: '#ffffff' },
 			content: {
 				title: {
 					size: 'medium',
@@ -35,7 +35,7 @@ const puerta: PageType = {
 		},
 		{
 			type: 'ImageAndText',
-			background: '#f3f1e9',
+			properties: { background: '#f3f1e9' },
 			content: {
 				imageUrl: puertaImg3,
 				imageDescription: 'Estructura de la puerta',
@@ -55,7 +55,7 @@ const puerta: PageType = {
 		},
 		{
 			type: 'ImageAndText',
-			background: '#ffffff',
+			properties: { background: '#ffffff' },
 			content: {
 				imageUrl: puertaImg2,
 				imageDescription: 'some image description',
@@ -75,7 +75,7 @@ const puerta: PageType = {
 		},
 		{
 			type: 'ImageCaroussel',
-			background: '#f3f1e9',
+			properties: { background: '#f3f1e9' },
 			content: {
 				images: [
 					{

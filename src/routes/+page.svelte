@@ -1,6 +1,6 @@
 <script>
 	import { PageSection, ColumnLayout2 } from '$lib/components';
-	import carpentryImg from '$lib/assets/carpentry.jpeg';
+	import carpentryImg from '$lib/assets/carpentry.webp';
 </script>
 
 <div class="h-[500px] overflow-hidden relative">
@@ -20,7 +20,7 @@
 	</div>
 </div>
 
-<PageSection>
+<PageSection properties={{}}>
 	<div class="h-[2000px]" />
 	<ColumnLayout2 columns={2}>
 		<p>hey</p>

@@ -1,5 +1,5 @@
 import type { PageType } from '$lib/types';
-import carpentryImg from '$lib/assets/carpentry3.jpeg';
+import carpentryImg from '$lib/assets/carpentry3.webp';
 
 const NotFoundPage: PageType = {
 	id: 'a0',
@@ -14,7 +14,7 @@ const NotFoundPage: PageType = {
 	sections: [
 		{
 			type: 'ImageAndText',
-			background: '#f3f1e9',
+			properties: { background: '#f3f1e9' },
 			content: {
 				imageUrl: 'imgUrl',
 				imageDescription: 'imgUrl',

@@ -22,7 +22,7 @@ export const load: PageServerLoad = async ({ route }) => {
 	const galleryPageCardsSection = galleryPage.sections.find((section) => section.type === 'Cards');
 
 	if (galleryPageCardsSection) {
-		galleryPageCardsSection.content = projectsCards;
+		galleryPageCardsSection.content = { properties: { columns: 3 }, cards: projectsCards };
 	}
 
 	return { page: galleryPage };

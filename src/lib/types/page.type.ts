@@ -1,4 +1,10 @@
-import type { CardType, ImageAndTextType, TextType, ImageCarrouselType } from './';
+import type {
+	CardType,
+	ImageAndTextType,
+	TextType,
+	ImageCarrouselType,
+	CardPropertiesType
+} from './';
 
 export type PageType = {
 	id: string;
@@ -22,26 +28,32 @@ export type PageSectionType =
 	| CardsSection
 	| TextSection;
 
+export type PageSectionProperties = {
+	paddingTop?: number;
+	paddingBottom?: number;
+	background?: string;
+};
+
 type ImageAndTextSection = {
 	type: 'ImageAndText';
-	background?: string;
+	properties: PageSectionProperties;
 	content: ImageAndTextType;
 };
 
 type ImageCarouselSection = {
 	type: 'ImageCaroussel';
-	background?: string;
+	properties: PageSectionProperties;
 	content: ImageCarrouselType;
 };
 
 type CardsSection = {
 	type: 'Cards';
-	background?: string;
-	content: CardType[];
+	properties: PageSectionProperties;
+	content: { properties: CardPropertiesType; cards: CardType[] };
 };
 
 type TextSection = {
 	type: 'Text';
-	background?: string;
+	properties: PageSectionProperties;
 	content: TextType;
 };

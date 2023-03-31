@@ -1,5 +1,5 @@
 import type { PageType } from '$lib/types';
-import galleryImg from '$lib/assets/carpentry2.jpeg';
+import galleryImg from '$lib/assets/carpentry2.webp';
 
 const contactPage: PageType = {
 	id: 'a3',
@@ -7,15 +7,15 @@ const contactPage: PageType = {
 	url: '/galeria',
 	meta: {
 		title: 'Galería',
-		description: 'Una recopliación de mis trabajos',
+		description: 'Una recopliación de nuestros trabajos',
 		imageUrl: galleryImg,
 		imageDescription: 'Carpintero marcando con un lápiz sobre madera'
 	},
 	sections: [
 		{
 			type: 'Cards',
-			background: '#ffffff',
-			content: []
+			properties: { background: '#ffffff' },
+			content: { properties: {}, cards: [] }
 		}
 	]
 };

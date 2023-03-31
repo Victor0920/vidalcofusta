@@ -5,7 +5,7 @@
 </script>
 
 <footer class="w-[100vw] h-5 shadow-lg">
-	<PageSection background="#33324e" pb={2}>
+	<PageSection properties={{ background: '#33324e', paddingBottom: 2 }}>
 		<div class="flex justify-between sm:flex-col">
 			<div class="flex flex-col sm:items-center sm:w-full sm:mb-4">
 				<Logo iconColor="#9fbcff" lettersColor="#ffffff" />

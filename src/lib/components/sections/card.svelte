@@ -13,7 +13,7 @@
 >
 	{#if imageUrl}
 		<div class="shadow-sm">
-			<img src={imageUrl} alt={imageDescription} class="max-h-[150px] object-cover" />
+			<img src={imageUrl} alt={imageDescription} class="max-h-[150px] w-full object-cover" />
 		</div>
 	{/if}
 
