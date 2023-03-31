@@ -8,8 +8,8 @@ const whoAreWePage: PageType = {
 	name: 'quienes-somos',
 	url: '/quienes-somos',
 	meta: {
-		title: 'Nuestro equipo',
-		description: 'Nos mueve la pasión por la madera',
+		title: 'Conócenos',
+		description: 'Descubre porqué nos mueve la creatividad',
 		imageUrl: carpentryImg,
 		imageDescription: 'Imagen de carpintería'
 	},
@@ -24,7 +24,8 @@ const whoAreWePage: PageType = {
 					text: 'Nuestro objetivo'
 				},
 				paragraphs: [
-					'Para conseguir lo que hemos conseguido se necesita un equipo entregado a su cometido.'
+					'Conseguir el efecto "Wow" en cada uno de nuestros proyectos. Creemos que la proactividad, la pasión y una pizca de ingenio es el método para lograrlo. Es por eso que nos volcamos al 120% para que cada proyecto genere el efecto que buscamos.',
+					'Damos lo máximo, puliendo cada detalle, para conseguir resultados duraderos, funcionales y estéticamente atractivos.'
 				]
 			}
 		},
@@ -42,9 +43,9 @@ const whoAreWePage: PageType = {
 					},
 					textColor: '#000000',
 					paragraphs: [
-						'Conseguir que tanto nosotros como nuestros clientes se sientan orgullosos de su proyecto.',
+						'Materializar en madera las ideas de nuestros clientes.',
 						'Ideas, diseño, materiales y servicio personalizado para conseguir un resultado único en el mundo.',
-						'Manteniendo siempre la calidad, profesionalidad y cercanía.'
+						'Manteniendo siempre calidad, profesionalidad y cercanía.'
 					]
 				}
 			}
@@ -71,44 +72,36 @@ const whoAreWePage: PageType = {
 				cards: [
 					{
 						imageUrl: joseImg2,
-						imageDescription: 'Whatsapp logo',
+						imageDescription: 'Imagen de Jose',
 						title: 'Jose',
 						description:
-							'Carpintero, obrero, diseñador y experto en madera. Desde que surge la idea hasta que se termina el proyecto, es el encargado de llevarlo a cabo.',
+							'Carpintero, obrero y diseñador. Desde que surje la idea hasta que se pulen los detalles finales. Es el encargado de llevarlo a cabo.',
 						url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
 					},
 					{
-						imageUrl: '',
-						imageDescription: 'Gmail logo',
+						imageUrl:
+							'https://thumbs.dreamstime.com/b/avatars-default-photo-placeholders-man-female-profile-vector-pictures-166601913.jpg',
+						imageDescription: 'Imagen de Víctor',
 						title: 'Víctor',
 						description:
-							'Desarrollador en microcontroladores y diseñador web. Se encarga de la programación informática en los proyectos (en caso de existir).',
+							'Programador de microcontroladores y diseñador web. Encargado de la programación y automatización.',
 						url: 'mailto:vidalcofusta@gmail.com'
 					}
 				]
 			}
+		},
+		{
+			type: 'Text',
+			properties: { background: '#ffffff', paddingBottom: 12 },
+			content: {
+				textColor: '#000000',
+				title: {
+					size: 'medium',
+					text: 'Botón'
+				},
+				paragraphs: ['**Anadir aquí un botón para contacto**']
+			}
 		}
-		// {
-		// 	type: 'ImageAndText',
-		// 	properties: { background: '#f3f1e9' },
-		// 	content: {
-		// 		imageUrl: joseImg2,
-		// 		imageDescription: 'imgUrl',
-		// 		imagePosition: 'start',
-		// 		text: {
-		// 			title: {
-		// 				size: 'medium',
-		// 				text: 'Nuestra misión'
-		// 			},
-		// 			textColor: '#000000',
-		// 			paragraphs: [
-		// 				'Conseguir que tanto nosotros como nuestros clientes se sientan orgullosos de su proyecto.',
-		// 				'Ideas, diseño, materiales y servicio personalizado para conseguir un resultado único en el mundo.',
-		// 				'Manteniendo siempre la calidad, profesionalidad y cercanía.'
-		// 			]
-		// 		}
-		// 	}
-		// }
 	]
 };
 
