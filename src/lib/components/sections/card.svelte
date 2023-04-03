@@ -17,7 +17,7 @@
 		</div>
 	{/if}
 
-	<div class="p-5 ">
+	<div class="p-5 flex flex-col h-full">
 		{#if title}
 			<h2 class="text-xl font-bold mb-3">{title}</h2>
 		{/if}
