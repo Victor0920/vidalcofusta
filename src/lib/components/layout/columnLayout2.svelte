@@ -1,13 +1,22 @@
 <script lang="ts">
 	export let columns: number;
-	// export let columns: any[];
+	export let columnsWidth: number[];
 </script>
 
-<div class="flex flex-row">
-	<div class="w-5/12">
-		<slot />
-	</div>
-	<div class="w-7/12">
-		<slot />
-	</div>
+<div class="columns flex flex-row sm:flex-col gap-y-8" style="--columns: {columns};">
+	<slot />
 </div>
+
+<style>
+	.columns {
+		--columns-width: calc(100% / var(--columns));
+		--columns-gap: 1rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		:global(.columns > *) {
+			width: var(--columns-width);
+			margin: var(--columns-gap);
+		}
+	}
+</style>

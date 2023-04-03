@@ -1,6 +1,8 @@
 <script>
 	import { PageSection, ColumnLayout2 } from '$lib/components';
 	import carpentryImg from '$lib/assets/carpentry.webp';
+
+	import { CaliperIcon, ChiselIcon, FixHomeIcon, HammerIcon } from '$lib/assets/icons';
 </script>
 
 <div class="h-[500px] overflow-hidden relative">
@@ -21,8 +23,26 @@
 </div>
 
 <PageSection properties={{}}>
-	<div class="h-[2000px]" />
-	<ColumnLayout2 columns={2}>
-		<p>hey</p>
+	<ColumnLayout2 columns={3} columnsWidth={[4, 4, 4]}>
+		<div class="flex flex-col items-center">
+			<CaliperIcon width={80} />
+			<h1 class="text-xl font-bold mb-2 mt-3">A medida</h1>
+			<p class="text-center">Projectos adaptados a cualquier espacio y ambiente.</p>
+		</div>
+		<div class="flex flex-col items-center">
+			<ChiselIcon width={80} />
+			<h1 class="text-xl font-bold mb-2 mt-3">A mano</h1>
+			<p class="text-center">Artesanía 100% para obtener resultados únicos.</p>
+		</div>
+		<div class="flex flex-col items-center">
+			<FixHomeIcon width={80} />
+			<h1 class="text-xl font-bold mb-2 mt-3">Restaurar o crear</h1>
+			<p class="text-center">Dar una segunda vida a tu muebele o crea uno nuevo.</p>
+		</div>
+		<div class="flex flex-col items-center">
+			<HammerIcon width={80} />
+			<h1 class="text-xl font-bold mb-2 mt-3">Reciclado o nuevo</h1>
+			<p class="text-center">Puedes elegir utilizar palets y maderas recicladas.</p>
+		</div>
 	</ColumnLayout2>
 </PageSection>
