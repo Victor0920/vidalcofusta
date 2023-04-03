@@ -12,6 +12,10 @@
 			url: '/quienes-somos'
 		},
 		{
+			text: 'Servicios',
+			url: '/servicios'
+		},
+		{
 			text: 'Galería',
 			url: '/galeria'
 		},

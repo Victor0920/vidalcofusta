@@ -25,7 +25,7 @@ const contactPage: PageType = {
 				},
 				paragraphs: [
 					'No importa el tamaño de tu proyecto, contacta con nosotros por la vía que prefieras y te haremos un presupuesto sin compromiso totalmente personalizado.',
-					'Tus datos serán tratados con la máxima confidencialidad, sin importar que vía de contacto utilices.'
+					'Tus datos serán siempre tratados con la máxima confidencialidad.'
 				],
 				textColor: '#000000'
 			}
