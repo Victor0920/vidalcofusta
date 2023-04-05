@@ -95,7 +95,7 @@ const whoAreWePage: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: {},
+			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
 			columns: [
 				{
 					rows: [
