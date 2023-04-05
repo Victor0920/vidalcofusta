@@ -21,7 +21,6 @@ const contactPage: PageType = {
 					rows: [
 						{
 							type: 'Cards',
-							properties: {},
 							content: { properties: {}, cards: [] }
 						}
 					]

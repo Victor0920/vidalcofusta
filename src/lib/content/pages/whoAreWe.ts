@@ -23,7 +23,6 @@ const whoAreWePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								textColor: '#000000',
 								title: {
@@ -49,7 +48,6 @@ const whoAreWePage: PageType = {
 					rows: [
 						{
 							type: 'ImageAndText',
-							properties: { background: '#ffffff', paddingTop: 0 },
 							content: {
 								imageUrl: joseImg1,
 								imageDescription: 'imgUrl',
@@ -81,7 +79,6 @@ const whoAreWePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: { background: '#f3f1e9', paddingBottom: 4 },
 							content: {
 								textColor: '#000000',
 								title: {
@@ -98,13 +95,12 @@ const whoAreWePage: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
+			sectionProperties: {},
 			columns: [
 				{
 					rows: [
 						{
 							type: 'Cards',
-							properties: {},
 							content: {
 								properties: {
 									columns: 2
@@ -143,7 +139,6 @@ const whoAreWePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: { background: '#ffffff', paddingBottom: 12 },
 							content: {
 								textColor: '#000000',
 								title: {

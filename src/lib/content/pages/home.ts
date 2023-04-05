@@ -22,7 +22,6 @@ const HomePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'small',
@@ -40,7 +39,6 @@ const HomePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'small',
@@ -58,7 +56,6 @@ const HomePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'small',
@@ -76,7 +73,6 @@ const HomePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'small',
@@ -101,7 +97,6 @@ const HomePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'medium',
@@ -120,7 +115,6 @@ const HomePage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'medium',

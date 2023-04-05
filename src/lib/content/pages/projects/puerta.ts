@@ -27,7 +27,6 @@ const puerta: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'medium',
@@ -53,7 +52,6 @@ const puerta: PageType = {
 					rows: [
 						{
 							type: 'ImageAndText',
-							properties: {},
 							content: {
 								imageUrl: puertaImg3,
 								imageDescription: 'Estructura de la puerta',
@@ -84,7 +82,6 @@ const puerta: PageType = {
 					rows: [
 						{
 							type: 'ImageAndText',
-							properties: {},
 							content: {
 								imageUrl: puertaImg2,
 								imageDescription: 'some image description',
@@ -115,7 +112,6 @@ const puerta: PageType = {
 					rows: [
 						{
 							type: 'ImageCaroussel',
-							properties: {},
 							content: {
 								images: [
 									{

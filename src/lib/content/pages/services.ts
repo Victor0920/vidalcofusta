@@ -22,7 +22,6 @@ const servicesPage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								textColor: '#000000',
 								title: {
@@ -47,7 +46,6 @@ const servicesPage: PageType = {
 					rows: [
 						{
 							type: 'Cards',
-							properties: {},
 							content: {
 								properties: {},
 								cards: [

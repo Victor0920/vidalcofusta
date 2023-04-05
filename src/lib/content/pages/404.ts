@@ -21,7 +21,6 @@ const NotFoundPage: PageType = {
 					rows: [
 						{
 							type: 'ImageAndText',
-							properties: {},
 							content: {
 								imageUrl: 'imgUrl',
 								imageDescription: 'imgUrl',

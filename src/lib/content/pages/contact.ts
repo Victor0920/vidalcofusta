@@ -24,7 +24,6 @@ const contactPage: PageType = {
 					rows: [
 						{
 							type: 'Text',
-							properties: {},
 							content: {
 								title: {
 									size: 'medium',
@@ -50,7 +49,6 @@ const contactPage: PageType = {
 					rows: [
 						{
 							type: 'Cards',
-							properties: {},
 							content: {
 								properties: {},
 								cards: [

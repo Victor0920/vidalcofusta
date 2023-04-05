@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ArrowIcon, CloseIcon, ExpandIcon } from '$lib/assets/icons';
-	import type { ImageCarrouselType } from '$lib/types/sections/imageCarrousel.type';
+	import type { ImageCarrouselType } from '$lib/types';
 
 	export let content: ImageCarrouselType;
 	let { images } = content;
