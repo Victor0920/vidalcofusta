@@ -1,12 +1,16 @@
 <script lang="ts">
 	import type { ComponentType } from '$lib/types';
-	import { Cards, Text, ImageAndText, ImageCarrousel } from './components';
+	import { Cards, Text, ImageAndText, Image, ImageCarrousel } from './components';
 
 	export let component: ComponentType;
 </script>
 
 {#if component.type === 'ImageAndText'}
 	<ImageAndText content={component.content} />
+{/if}
+
+{#if component.type === 'Image'}
+	<Image content={component.content} />
 {/if}
 
 {#if component.type === 'ImageCaroussel'}

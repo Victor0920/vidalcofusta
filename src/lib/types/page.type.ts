@@ -1,6 +1,7 @@
 import type {
 	CardType,
 	ImageAndTextType,
+	ImageType,
 	TextType,
 	ImageCarrouselType,
 	CardPropertiesType,
@@ -32,7 +33,12 @@ type Column = {
 	rows: ComponentType[];
 };
 
-export type ComponentType = ImageAndTextSection | ImageCarouselSection | CardsSection | TextSection;
+export type ComponentType =
+	| ImageAndTextComponent
+	| ImageComponent
+	| ImageCarouselComponent
+	| CardsComponent
+	| TextComponent;
 
 export type PageSectionProperties = {
 	paddingTop?: number;
@@ -40,26 +46,27 @@ export type PageSectionProperties = {
 	background?: string;
 };
 
-type ImageAndTextSection = {
+type ImageAndTextComponent = {
 	type: 'ImageAndText';
-	properties: PageSectionProperties;
 	content: ImageAndTextType;
 };
 
-type ImageCarouselSection = {
+type ImageComponent = {
+	type: 'Image';
+	content: ImageType;
+};
+
+type ImageCarouselComponent = {
 	type: 'ImageCaroussel';
-	properties: PageSectionProperties;
 	content: ImageCarrouselType;
 };
 
-type CardsSection = {
+type CardsComponent = {
 	type: 'Cards';
-	properties: PageSectionProperties;
 	content: { properties: CardPropertiesType; cards: CardType[] };
 };
 
-type TextSection = {
+type TextComponent = {
 	type: 'Text';
-	properties: PageSectionProperties;
 	content: TextType;
 };
