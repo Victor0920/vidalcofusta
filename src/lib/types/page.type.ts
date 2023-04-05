@@ -3,7 +3,8 @@ import type {
 	ImageAndTextType,
 	TextType,
 	ImageCarrouselType,
-	CardPropertiesType
+	CardPropertiesType,
+	ColumnLayoutType
 } from './';
 
 export type PageType = {
@@ -11,7 +12,7 @@ export type PageType = {
 	name: string;
 	url: string;
 	meta: Meta;
-	sections: PageSectionType[];
+	pageSections: PageSectionType[];
 };
 
 type Meta = {
@@ -22,11 +23,16 @@ type Meta = {
 	imageDescription: string;
 };
 
-export type PageSectionType =
-	| ImageAndTextSection
-	| ImageCarouselSection
-	| CardsSection
-	| TextSection;
+export type PageSectionType = ColumnLayoutType & {
+	sectionProperties: PageSectionProperties;
+	columns: Column[];
+};
+
+type Column = {
+	rows: ComponentType[];
+};
+
+export type ComponentType = ImageAndTextSection | ImageCarouselSection | CardsSection | TextSection;
 
 export type PageSectionProperties = {
 	paddingTop?: number;

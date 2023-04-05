@@ -19,7 +19,10 @@ export const load: PageServerLoad = async ({ route }) => {
 		imageDescription: project.meta.title
 	}));
 
-	const galleryPageCardsSection = galleryPage.sections.find((section) => section.type === 'Cards');
+	// This must be changed to find the cards Component across all the the pageSections
+	const galleryPageCardsSection = galleryPage.pageSections[0].columns[0].rows.find(
+		(section) => section.type === 'Cards'
+	);
 
 	if (galleryPageCardsSection) {
 		galleryPageCardsSection.content = { properties: { columns: 3 }, cards: projectsCards };

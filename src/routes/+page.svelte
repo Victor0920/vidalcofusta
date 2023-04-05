@@ -1,8 +1,15 @@
-<script>
-	import { PageSection, ColumnLayout2 } from '$lib/components';
+<script lang="ts">
+	import type { PageData } from './$types';
+	import { PageSection, ColumnLayout, Component } from '$lib/components';
 	import carpentryImg from '$lib/assets/carpentry.webp';
 
-	import { CaliperIcon, ChiselIcon, FixHomeIcon, HammerIcon } from '$lib/assets/icons';
+	// import { CaliperIcon, ChiselIcon, FixHomeIcon, HammerIcon } from '$lib/assets/icons';
+
+	export let data: PageData;
+	const homePage = data.page;
+
+	$: meta = homePage.meta;
+	$: pageSections = homePage.pageSections;
 </script>
 
 <div class="h-[500px] overflow-hidden relative">
@@ -22,17 +29,12 @@
 	</div>
 </div>
 
-<PageSection properties={{}}>
-	<ColumnLayout2 columns={3} columnsWidth={[4, 4, 4]}>
+<!-- <PageSection properties={{}}>
+	<ColumnLayout columns={4} columnsWidth={[3, 3, 3, 3]}>
 		<div class="flex flex-col items-center">
 			<CaliperIcon width={80} />
 			<h1 class="text-xl font-bold mb-2 mt-3">A medida</h1>
 			<p class="text-center">Projectos adaptados a cualquier espacio y ambiente.</p>
-		</div>
-		<div class="flex flex-col items-center">
-			<ChiselIcon width={80} />
-			<h1 class="text-xl font-bold mb-2 mt-3">A mano</h1>
-			<p class="text-center">Artesanía 100% para obtener resultados únicos.</p>
 		</div>
 		<div class="flex flex-col items-center">
 			<FixHomeIcon width={80} />
@@ -44,5 +46,29 @@
 			<h1 class="text-xl font-bold mb-2 mt-3">Reciclado o nuevo</h1>
 			<p class="text-center">Puedes elegir utilizar palets y maderas recicladas.</p>
 		</div>
-	</ColumnLayout2>
-</PageSection>
+		<div class="flex flex-col items-center">
+			<ChiselIcon width={80} />
+			<Text
+				content={{
+					title: { size: 'small', text: 'A mano' },
+					paragraphs: ['Artesanía 100% para obtener resultados únicos.'],
+					textColor: '#000000',
+					showLine: false,
+					textAlign: 'center'
+				}}
+			/>
+		</div>
+	</ColumnLayout>
+</PageSection> -->
+
+{#each pageSections as section}
+	<PageSection properties={section.sectionProperties}>
+		<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
+			{#each section.columns as column}
+				{#each column.rows as content}
+					<Component component={content} />
+				{/each}
+			{/each}
+		</ColumnLayout>
+	</PageSection>
+{/each}

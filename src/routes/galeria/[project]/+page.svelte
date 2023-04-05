@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { PageSection, Section, PageIntro } from '$lib/components';
+	import { PageIntro, PageSection, ColumnLayout, Component } from '$lib/components';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 	const projectPage = data.page;
 
 	$: meta = projectPage.meta;
-	$: sections = projectPage.sections;
+	$: pageSections = projectPage.pageSections;
 </script>
 
 <svelte:head>
@@ -22,10 +22,14 @@
 	subtitle={meta.description}
 />
 
-<div class="bg-white">
-	{#each sections as section}
-		<PageSection properties={section.properties}>
-			<Section {section} />
-		</PageSection>
-	{/each}
-</div>
+{#each pageSections as section}
+	<PageSection properties={section.sectionProperties}>
+		<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
+			{#each section.columns as column}
+				{#each column.rows as content}
+					<Component component={content} />
+				{/each}
+			{/each}
+		</ColumnLayout>
+	</PageSection>
+{/each}

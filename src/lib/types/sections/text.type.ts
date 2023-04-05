@@ -6,4 +6,5 @@ export type TextType = {
 	showLine?: boolean;
 	paragraphs: string[];
 	textColor: string;
+	textAlign?: 'center' | 'left' | 'right';
 };

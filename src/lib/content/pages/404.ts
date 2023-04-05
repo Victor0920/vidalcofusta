@@ -11,16 +11,27 @@ const NotFoundPage: PageType = {
 		imageUrl: carpentryImg,
 		imageDescription: 'Hombre lijando madera'
 	},
-	sections: [
+	pageSections: [
 		{
-			type: 'ImageAndText',
-			properties: { background: '#f3f1e9' },
-			content: {
-				imageUrl: 'imgUrl',
-				imageDescription: 'imgUrl',
-				imagePosition: 'start',
-				text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
-			}
+			totalColumns: 2,
+			columnsWidth: [5, 7],
+			sectionProperties: { background: '#f3f1e9' },
+			columns: [
+				{
+					rows: [
+						{
+							type: 'ImageAndText',
+							properties: {},
+							content: {
+								imageUrl: 'imgUrl',
+								imageDescription: 'imgUrl',
+								imagePosition: 'start',
+								text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 };

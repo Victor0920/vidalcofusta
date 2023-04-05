@@ -3,13 +3,13 @@
 
 	export let content: TextType;
 
-	const { title, paragraphs, textColor, showLine = true } = content;
+	const { title, paragraphs, textColor, showLine = true, textAlign } = content;
 </script>
 
-<div class="flex flex-col justify-center w-full h-full">
+<div class="flex flex-col justify-center w-full h-full" style:text-align={textAlign}>
 	{#if title}
 		<h1
-			class={`relative font-bold  sm:text-center ${showLine ? "after:content-[''] mb-7" : 'mb-4'} ${
+			class={`relative font-bold sm:text-center ${showLine ? "after:content-[''] mb-7" : 'mb-4'} ${
 				title.size === 'large' ? 'text-3xl' : title.size === 'medium' ? 'text-2xl' : 'text-xl'
 			}`}
 			style:color={textColor}

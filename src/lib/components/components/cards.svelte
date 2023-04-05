@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { CardPropertiesType, CardType } from '$lib/types';
-	import { Card } from '../';
+	import { Card } from './';
 
 	export let cards: CardType[];
 	export let properties: CardPropertiesType;

@@ -11,11 +11,22 @@ const contactPage: PageType = {
 		imageUrl: galleryImg,
 		imageDescription: 'Carpintero marcando con un lápiz sobre madera'
 	},
-	sections: [
+	pageSections: [
 		{
-			type: 'Cards',
-			properties: { background: '#ffffff' },
-			content: { properties: {}, cards: [] }
+			totalColumns: 1,
+			columnsWidth: [12],
+			sectionProperties: { background: '#ffffff' },
+			columns: [
+				{
+					rows: [
+						{
+							type: 'Cards',
+							properties: {},
+							content: { properties: {}, cards: [] }
+						}
+					]
+				}
+			]
 		}
 	]
 };
