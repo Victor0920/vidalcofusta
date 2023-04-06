@@ -20,6 +20,7 @@ const whoAreWePage: PageType = {
 			sectionProperties: { background: '#ffffff', paddingBottom: 12 },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',
@@ -45,6 +46,7 @@ const whoAreWePage: PageType = {
 			sectionProperties: { background: '#ffffff', paddingTop: 0 },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'ImageAndText',
@@ -76,6 +78,7 @@ const whoAreWePage: PageType = {
 			sectionProperties: { background: '#f3f1e9', paddingBottom: 4 },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',
@@ -98,6 +101,7 @@ const whoAreWePage: PageType = {
 			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Cards',
@@ -136,6 +140,7 @@ const whoAreWePage: PageType = {
 			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',

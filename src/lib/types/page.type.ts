@@ -5,7 +5,8 @@ import type {
 	TextType,
 	ImageCarrouselType,
 	CardPropertiesType,
-	ColumnLayoutType
+	ColumnLayoutType,
+	RowsLayoutType
 } from './';
 
 export type PageType = {
@@ -30,6 +31,7 @@ export type PageSectionType = ColumnLayoutType & {
 };
 
 type Column = {
+	rowProperties: RowsLayoutType;
 	rows: ComponentType[];
 };
 

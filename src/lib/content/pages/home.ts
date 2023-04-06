@@ -1,5 +1,9 @@
 import type { PageType } from '$lib/types';
 import carpentryImg from '$lib/assets/carpentry.webp';
+import caliperIcon from '$lib/assets/icons/caliper.svg';
+import chiselIcon from '$lib/assets/icons/chisel.svg';
+import fixHomeIcon from '$lib/assets/icons/fix-home.svg';
+import hammerIcon from '$lib/assets/icons/hammer.svg';
 
 const HomePage: PageType = {
 	id: 'a0',
@@ -19,7 +23,23 @@ const HomePage: PageType = {
 			sectionProperties: { background: '#ffffff' },
 			columns: [
 				{
+					rowProperties: {
+						gap: 2
+					},
 					rows: [
+						{
+							type: 'Image',
+							content: {
+								imageUrl: caliperIcon,
+								imageDescription: 'Caliper Icon',
+								properties: {
+									width: '100%',
+									height: '100px',
+									rounded: false,
+									shadow: false
+								}
+							}
+						},
 						{
 							type: 'Text',
 							content: {
@@ -36,7 +56,23 @@ const HomePage: PageType = {
 					]
 				},
 				{
+					rowProperties: {
+						gap: 2
+					},
 					rows: [
+						{
+							type: 'Image',
+							content: {
+								imageUrl: fixHomeIcon,
+								imageDescription: 'Icono de una casa',
+								properties: {
+									width: '100%',
+									height: '100px',
+									rounded: false,
+									shadow: false
+								}
+							}
+						},
 						{
 							type: 'Text',
 							content: {
@@ -44,7 +80,7 @@ const HomePage: PageType = {
 									size: 'small',
 									text: 'Restaurar o crear'
 								},
-								paragraphs: ['Dar una segunda vida a tu muebele o crea uno nuevo.'],
+								paragraphs: ['Dar una segunda vida a tu mueble o crea uno nuevo.'],
 								showLine: false,
 								textAlign: 'center',
 								textColor: '#000000'
@@ -53,7 +89,23 @@ const HomePage: PageType = {
 					]
 				},
 				{
+					rowProperties: {
+						gap: 2
+					},
 					rows: [
+						{
+							type: 'Image',
+							content: {
+								imageUrl: hammerIcon,
+								imageDescription: 'Icono de un martillo',
+								properties: {
+									width: '100%',
+									height: '100px',
+									rounded: false,
+									shadow: false
+								}
+							}
+						},
 						{
 							type: 'Text',
 							content: {
@@ -70,7 +122,23 @@ const HomePage: PageType = {
 					]
 				},
 				{
+					rowProperties: {
+						gap: 2
+					},
 					rows: [
+						{
+							type: 'Image',
+							content: {
+								imageUrl: chiselIcon,
+								imageDescription: 'Icono de un formón',
+								properties: {
+									width: '100%',
+									height: '100px',
+									rounded: false,
+									shadow: false
+								}
+							}
+						},
 						{
 							type: 'Text',
 							content: {

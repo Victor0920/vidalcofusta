@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PageIntro, PageSection, ColumnLayout, Component } from '$lib/components';
+	import { PageIntro, PageSection, ColumnLayout, RowsLayout, Component } from '$lib/components';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -26,9 +26,13 @@
 	<PageSection properties={section.sectionProperties}>
 		<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
 			{#each section.columns as column}
-				{#each column.rows as content}
-					<Component component={content} />
-				{/each}
+				<RowsLayout gap={column.rowProperties?.gap}>
+					{#each column.rows as content}
+						<div>
+							<Component component={content} />
+						</div>
+					{/each}
+				</RowsLayout>
 			{/each}
 		</ColumnLayout>
 	</PageSection>

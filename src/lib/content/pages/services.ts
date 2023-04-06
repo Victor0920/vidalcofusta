@@ -19,6 +19,7 @@ const servicesPage: PageType = {
 			sectionProperties: { background: '#ffffff', paddingBottom: 12 },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',
@@ -43,6 +44,7 @@ const servicesPage: PageType = {
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Cards',

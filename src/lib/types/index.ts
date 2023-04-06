@@ -5,4 +5,5 @@ export * from './components/imageCarrousel.type';
 export * from './components/text.type';
 
 export * from './columnLayout.type';
+export * from './rowsLayout.type';
 export * from './page.type';

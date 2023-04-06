@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { PageSection, ColumnLayout, Component } from '$lib/components';
+	import { PageSection, ColumnLayout, Component, RowsLayout } from '$lib/components';
 	import carpentryImg from '$lib/assets/carpentry.webp';
 
 	// import { CaliperIcon, ChiselIcon, FixHomeIcon, HammerIcon } from '$lib/assets/icons';
@@ -65,9 +65,13 @@
 	<PageSection properties={section.sectionProperties}>
 		<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
 			{#each section.columns as column}
-				{#each column.rows as content}
-					<Component component={content} />
-				{/each}
+				<RowsLayout gap={column.rowProperties?.gap}>
+					{#each column.rows as content}
+						<div>
+							<Component component={content} />
+						</div>
+					{/each}
+				</RowsLayout>
 			{/each}
 		</ColumnLayout>
 	</PageSection>

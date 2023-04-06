@@ -18,6 +18,7 @@ const NotFoundPage: PageType = {
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'ImageAndText',

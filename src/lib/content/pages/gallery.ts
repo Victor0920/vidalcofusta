@@ -18,6 +18,7 @@ const contactPage: PageType = {
 			sectionProperties: { background: '#ffffff' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Cards',

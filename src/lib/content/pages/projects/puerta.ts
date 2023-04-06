@@ -24,6 +24,7 @@ const puerta: PageType = {
 			sectionProperties: { background: '#ffffff' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',
@@ -49,6 +50,7 @@ const puerta: PageType = {
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'ImageAndText',
@@ -79,6 +81,7 @@ const puerta: PageType = {
 			sectionProperties: { background: '#ffffff' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'ImageAndText',
@@ -109,6 +112,7 @@ const puerta: PageType = {
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'ImageCaroussel',
