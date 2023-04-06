@@ -113,7 +113,7 @@ const HomePage: PageType = {
 									size: 'small',
 									text: 'Reciclado o nuevo'
 								},
-								paragraphs: ['Puedes elegir utilizar palets y maderas recicladas.'],
+								paragraphs: ['Tú eliges los materiales, nosotros hacemos el resto.'],
 								showLine: false,
 								textAlign: 'center',
 								textColor: '#000000'
@@ -162,6 +162,7 @@ const HomePage: PageType = {
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',
@@ -180,6 +181,7 @@ const HomePage: PageType = {
 					]
 				},
 				{
+					rowProperties: {},
 					rows: [
 						{
 							type: 'Text',
