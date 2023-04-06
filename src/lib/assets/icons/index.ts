@@ -1,12 +1,12 @@
 export { default as ArrowIcon } from './arrow.svelte';
 export { default as ArrowheadRightIcon } from './arrowhead-right.svelte';
 export { default as CloseIcon } from './close.svelte';
-export { default as CaliperIcon } from './caliper.svelte';
-export { default as ChiselIcon } from './chisel.svelte';
+// export { default as CaliperIcon } from './caliper.svelte';
+// export { default as ChiselIcon } from './chisel.svelte';
 export { default as ExpandIcon } from './expand.svelte';
 export { default as FacebookIcon } from './facebook.svelte';
-export { default as FixHomeIcon } from './fix-home.svelte';
-export { default as HammerIcon } from './hammer.svelte';
+// export { default as FixHomeIcon } from './fix-home.svelte';
+// export { default as HammerIcon } from './hammer.svelte';
 export { default as InstagramIcon } from './instagram.svelte';
 export { default as MailIcon } from './mail.svelte';
 export { default as WhatsappIcon } from './whatsapp.svelte';
