@@ -12,7 +12,7 @@ export const load: PageServerLoad = async ({ route }) => {
 		{
 			totalColumns: 3,
 			columnsWidth: [4],
-			sectionProperties: { background: '#ffffff' },
+			sectionProperties: { background: '#f3f1e9' },
 			columns: projectPages.map((project) => ({
 				rowProperties: {},
 				rows: [

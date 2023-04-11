@@ -4,12 +4,12 @@
 
 	export let content: CardType;
 
-	let { imageUrl, imageDescription, title, description, buttonText, url } = content;
+	let { imageUrl, imageDescription, title, description, buttonText, url = null } = content;
 </script>
 
 <a
 	class="flex flex-col w-full shadow-lg rounded-md overflow-hidden hover:scale-[103%] hover:shadow-2xl bg-white transition-all duration-200 group"
-	href={url}
+	{...url ? { href: url } : {}}
 >
 	{#if imageUrl}
 		<div class="shadow-sm">

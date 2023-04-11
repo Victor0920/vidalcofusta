@@ -1,4 +1,5 @@
 import type {
+	ButtonType,
 	CardType,
 	ImageType,
 	TextType,
@@ -33,12 +34,27 @@ type Column = {
 	rows: ComponentType[];
 };
 
-export type ComponentType = ImageComponent | ImageCarouselComponent | CardComponent | TextComponent;
+export type ComponentType =
+	| ButtonComponent
+	| CardComponent
+	| ImageComponent
+	| ImageCarouselComponent
+	| TextComponent;
 
 export type PageSectionProperties = {
 	paddingTop?: number;
 	paddingBottom?: number;
 	background?: string;
+};
+
+type ButtonComponent = {
+	type: 'Button';
+	content: ButtonType;
+};
+
+type CardComponent = {
+	type: 'Card';
+	content: CardType;
 };
 
 type ImageComponent = {
@@ -49,11 +65,6 @@ type ImageComponent = {
 type ImageCarouselComponent = {
 	type: 'ImageCaroussel';
 	content: ImageCarrouselType;
-};
-
-type CardComponent = {
-	type: 'Card';
-	content: CardType;
 };
 
 type TextComponent = {

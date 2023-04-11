@@ -125,8 +125,7 @@ const whoAreWePage: PageType = {
 								imageDescription: 'Imagen de Jose',
 								title: 'Jose',
 								description:
-									'Carpintero, obrero y diseñador. Desde que surje la idea hasta que se pulen los detalles finales. Es el encargado de llevarlo a cabo.',
-								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+									'Carpintero, obrero y diseñador. Desde que surje la idea hasta que se pulen los detalles finales. Es el encargado de llevarlo a cabo.'
 							}
 						}
 					]
@@ -142,8 +141,30 @@ const whoAreWePage: PageType = {
 								imageDescription: 'Imagen de Víctor',
 								title: 'Víctor',
 								description:
-									'Programador de microcontroladores y diseñador web. Encargado de la programación y automatización.',
-								url: 'mailto:vidalcofusta@gmail.com'
+									'Programador de microcontroladores y diseñador web. Encargado de la programación y automatización.'
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			totalColumns: 1,
+			columnsWidth: [12],
+			sectionProperties: { background: '#f3f1e9', paddingTop: 0, paddingBottom: 0 },
+			columns: [
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Text',
+							content: {
+								textColor: '#000000',
+								title: {
+									size: 'small',
+									text: 'Contacta con nosotros'
+								},
+								paragraphs: []
 							}
 						}
 					]
@@ -159,14 +180,11 @@ const whoAreWePage: PageType = {
 					rowProperties: {},
 					rows: [
 						{
-							type: 'Text',
+							type: 'Button',
 							content: {
-								textColor: '#000000',
-								title: {
-									size: 'medium',
-									text: 'Botón'
-								},
-								paragraphs: ['**Anadir aquí un botón para contacto**']
+								text: 'Contacto',
+								theme: 'red',
+								url: '/contacto'
 							}
 						}
 					]

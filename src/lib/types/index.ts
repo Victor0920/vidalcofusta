@@ -1,3 +1,4 @@
+export * from './components/button.type';
 export * from './components/card.type';
 export * from './components/image.type';
 export * from './components/imageCarrousel.type';
