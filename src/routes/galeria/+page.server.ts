@@ -1,32 +1,36 @@
 import { findAllProjectPages, findPage } from '$lib/server/secrets';
 import type { PageServerLoad } from './$types';
 
-import type { CardType } from '$lib/types';
+// import type { CardType } from '$lib/types';
 
 export const load: PageServerLoad = async ({ route }) => {
 	const galleryPage = await findPage(route.id);
 
 	const projectPages = await findAllProjectPages();
 
-	// This will need to be change to a <Projects> component to be reutilizable in other parts of the site
-
-	const projectsCards: CardType[] = projectPages.map((project) => ({
-		title: project.meta.title,
-		description: project.meta.description,
-		buttonText: 'Más detalles',
-		url: project.url,
-		imageUrl: project.meta.imageUrl,
-		imageDescription: project.meta.title
-	}));
-
-	// This must be changed to find the cards Component across all the the pageSections
-	const galleryPageCardsSection = galleryPage.pageSections[0].columns[0].rows.find(
-		(section) => section.type === 'Cards'
-	);
-
-	if (galleryPageCardsSection) {
-		galleryPageCardsSection.content = { properties: { columns: 3 }, cards: projectsCards };
-	}
+	galleryPage.pageSections = [
+		{
+			totalColumns: 3,
+			columnsWidth: [4],
+			sectionProperties: { background: '#ffffff' },
+			columns: projectPages.map((project) => ({
+				rowProperties: {},
+				rows: [
+					{
+						type: 'Card',
+						content: {
+							title: project.meta.title,
+							description: project.meta.description,
+							buttonText: 'Más detalles',
+							url: project.url,
+							imageUrl: project.meta.imageUrl,
+							imageDescription: project.meta.title
+						}
+					}
+				]
+			}))
+		}
+	];
 
 	return { page: galleryPage };
 };

@@ -6,7 +6,3 @@ export type CardType = {
 	imageUrl?: string;
 	imageDescription?: string;
 };
-
-export type CardPropertiesType = {
-	columns?: number;
-};

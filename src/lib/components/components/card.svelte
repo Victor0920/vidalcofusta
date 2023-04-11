@@ -2,9 +2,9 @@
 	import { ArrowheadRightIcon } from '$lib/assets/icons';
 	import type { CardType } from '$lib/types';
 
-	export let card: CardType;
+	export let content: CardType;
 
-	let { imageUrl, imageDescription, title, description, buttonText, url } = card;
+	let { imageUrl, imageDescription, title, description, buttonText, url } = content;
 </script>
 
 <a

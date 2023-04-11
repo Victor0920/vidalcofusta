@@ -2,6 +2,6 @@
 	export let gap: number = 1;
 </script>
 
-<div class="flex flex-col items-center" style="gap: {gap * 10}px;">
+<div class="flex flex-col items-center sm:w-full" style="gap: {gap * 10}px;">
 	<slot />
 </div>

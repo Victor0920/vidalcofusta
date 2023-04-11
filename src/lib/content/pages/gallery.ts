@@ -11,24 +11,7 @@ const contactPage: PageType = {
 		imageUrl: galleryImg,
 		imageDescription: 'Carpintero marcando con un lápiz sobre madera'
 	},
-	pageSections: [
-		{
-			totalColumns: 1,
-			columnsWidth: [12],
-			sectionProperties: { background: '#ffffff' },
-			columns: [
-				{
-					rowProperties: {},
-					rows: [
-						{
-							type: 'Cards',
-							content: { properties: {}, cards: [] }
-						}
-					]
-				}
-			]
-		}
-	]
+	pageSections: []
 };
 
 export default contactPage;

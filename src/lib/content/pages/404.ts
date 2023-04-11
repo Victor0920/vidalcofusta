@@ -13,20 +13,24 @@ const NotFoundPage: PageType = {
 	},
 	pageSections: [
 		{
-			totalColumns: 2,
-			columnsWidth: [5, 7],
-			sectionProperties: { background: '#f3f1e9' },
+			totalColumns: 1,
+			columnsWidth: [12],
+			sectionProperties: { background: '#fff' },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'ImageAndText',
+							type: 'Text',
 							content: {
-								imageUrl: 'imgUrl',
-								imageDescription: 'imgUrl',
-								imagePosition: 'start',
-								text: { textColor: '#000000', paragraphs: ['first text', 'second text'] }
+								title: {
+									size: 'medium',
+									text: 'Oh No'
+								},
+								paragraphs: ['Esta página no existe'],
+								textColor: '#000000',
+								showLine: false,
+								textAlign: 'left'
 							}
 						}
 					]

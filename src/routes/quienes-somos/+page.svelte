@@ -27,7 +27,7 @@
 			{#each section.columns as column}
 				<RowsLayout gap={column.rowProperties?.gap}>
 					{#each column.rows as content}
-						<div>
+						<div style:width="100%" style:height="100%">
 							<Component component={content} />
 						</div>
 					{/each}

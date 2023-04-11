@@ -3,8 +3,6 @@
 	import { PageSection, ColumnLayout, Component, RowsLayout } from '$lib/components';
 	import carpentryImg from '$lib/assets/carpentry.webp';
 
-	// import { CaliperIcon, ChiselIcon, FixHomeIcon, HammerIcon } from '$lib/assets/icons';
-
 	export let data: PageData;
 	const homePage = data.page;
 
@@ -29,45 +27,13 @@
 	</div>
 </div>
 
-<!-- <PageSection properties={{}}>
-	<ColumnLayout columns={4} columnsWidth={[3, 3, 3, 3]}>
-		<div class="flex flex-col items-center">
-			<CaliperIcon width={80} />
-			<h1 class="text-xl font-bold mb-2 mt-3">A medida</h1>
-			<p class="text-center">Projectos adaptados a cualquier espacio y ambiente.</p>
-		</div>
-		<div class="flex flex-col items-center">
-			<FixHomeIcon width={80} />
-			<h1 class="text-xl font-bold mb-2 mt-3">Restaurar o crear</h1>
-			<p class="text-center">Dar una segunda vida a tu muebele o crea uno nuevo.</p>
-		</div>
-		<div class="flex flex-col items-center">
-			<HammerIcon width={80} />
-			<h1 class="text-xl font-bold mb-2 mt-3">Reciclado o nuevo</h1>
-			<p class="text-center">Puedes elegir utilizar palets y maderas recicladas.</p>
-		</div>
-		<div class="flex flex-col items-center">
-			<ChiselIcon width={80} />
-			<Text
-				content={{
-					title: { size: 'small', text: 'A mano' },
-					paragraphs: ['Artesanía 100% para obtener resultados únicos.'],
-					textColor: '#000000',
-					showLine: false,
-					textAlign: 'center'
-				}}
-			/>
-		</div>
-	</ColumnLayout>
-</PageSection> -->
-
 {#each pageSections as section}
 	<PageSection properties={section.sectionProperties}>
 		<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
 			{#each section.columns as column}
 				<RowsLayout gap={column.rowProperties?.gap}>
 					{#each column.rows as content}
-						<div>
+						<div style:width="100%" style:height="100%">
 							<Component component={content} />
 						</div>
 					{/each}

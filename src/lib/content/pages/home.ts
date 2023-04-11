@@ -36,6 +36,7 @@ const HomePage: PageType = {
 									width: '100%',
 									height: '100px',
 									rounded: false,
+									cover: false,
 									shadow: false
 								}
 							}
@@ -69,6 +70,7 @@ const HomePage: PageType = {
 									width: '100%',
 									height: '100px',
 									rounded: false,
+									cover: false,
 									shadow: false
 								}
 							}
@@ -102,6 +104,7 @@ const HomePage: PageType = {
 									width: '100%',
 									height: '100px',
 									rounded: false,
+									cover: false,
 									shadow: false
 								}
 							}
@@ -135,6 +138,7 @@ const HomePage: PageType = {
 									width: '100%',
 									height: '100px',
 									rounded: false,
+									cover: false,
 									shadow: false
 								}
 							}

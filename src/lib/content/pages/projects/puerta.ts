@@ -45,30 +45,45 @@ const puerta: PageType = {
 			]
 		},
 		{
-			totalColumns: 1,
-			columnsWidth: [12],
+			totalColumns: 2,
+			columnsWidth: [6, 6],
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'ImageAndText',
+							type: 'Image',
 							content: {
 								imageUrl: puertaImg3,
 								imageDescription: 'Estructura de la puerta',
-								imagePosition: 'start',
-								text: {
-									title: {
-										size: 'medium',
-										text: 'Estructura'
-									},
-									paragraphs: [
-										'Elit sunt cupidatat dolore pariatur incididunt eiusmod consequat nostrud nulla sunt irure magna id.',
-										'Sit ut non Lorem laboris enim culpa magna ipsum. Magna cillum esse aute amet occaecat. Quis fugiat sunt dolore irure sit minim non proident exercitation incididunt esse sint non ipsum.'
-									],
-									textColor: '#000000'
+								properties: {
+									width: '100%',
+									height: '300px',
+									rounded: true,
+									shadow: true
 								}
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Text',
+							content: {
+								title: {
+									size: 'medium',
+									text: 'Estructura'
+								},
+								paragraphs: [
+									'Elit sunt cupidatat dolore pariatur incididunt eiusmod consequat nostrud nulla sunt irure magna id.',
+									'Sit ut non Lorem laboris enim culpa magna ipsum. Magna cillum esse aute amet occaecat. Quis fugiat sunt dolore irure sit minim non proident exercitation incididunt esse sint non ipsum.'
+								],
+								textColor: '#000000',
+								showLine: false,
+								textAlign: 'left'
 							}
 						}
 					]
@@ -76,29 +91,44 @@ const puerta: PageType = {
 			]
 		},
 		{
-			totalColumns: 1,
-			columnsWidth: [12],
+			totalColumns: 2,
+			columnsWidth: [6, 6],
 			sectionProperties: { background: '#ffffff' },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'ImageAndText',
+							type: 'Text',
+							content: {
+								title: {
+									size: 'medium',
+									text: 'Bisagras'
+								},
+								paragraphs: [
+									'Elit sunt cupidatat dolore pariatur incididunt eiusmod consequat nostrud nulla sunt irure magna id.',
+									'Sit ut non Lorem laboris enim culpa magna ipsum. Magna cillum esse aute amet occaecat. Quis fugiat sunt dolore irure sit minim non proident exercitation incididunt esse sint non ipsum.'
+								],
+								textColor: '#000000',
+								showLine: false,
+								textAlign: 'left'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Image',
 							content: {
 								imageUrl: puertaImg2,
-								imageDescription: 'some image description',
-								imagePosition: 'end',
-								text: {
-									title: {
-										size: 'medium',
-										text: 'Bisagras'
-									},
-									paragraphs: [
-										'Elit sunt cupidatat dolore pariatur incididunt eiusmod consequat nostrud nulla sunt irure magna id.',
-										'Sit ut non Lorem laboris enim culpa magna ipsum. Magna cillum esse aute amet occaecat. Quis fugiat sunt dolore irure sit minim non proident exercitation incididunt esse sint non ipsum.'
-									],
-									textColor: '#000000'
+								imageDescription: 'Estructura de la puerta en detalle',
+								properties: {
+									width: '100%',
+									height: '300px',
+									rounded: true,
+									shadow: true
 								}
 							}
 						}

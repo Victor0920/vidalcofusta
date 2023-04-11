@@ -42,43 +42,54 @@ const contactPage: PageType = {
 			]
 		},
 		{
-			totalColumns: 1,
-			columnsWidth: [12],
+			totalColumns: 3,
+			columnsWidth: [4, 4, 4],
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'Cards',
+							type: 'Card',
 							content: {
-								properties: {},
-								cards: [
-									{
-										imageUrl: WhatsappImg,
-										imageDescription: 'Whatsapp logo',
-										title: 'Whatsapp',
-										description: '+34 622 88 13 50',
-										buttonText: 'Envíanos un mensaje',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									},
-									{
-										imageUrl: GmailImg,
-										imageDescription: 'Gmail logo',
-										title: 'Correo electrónico',
-										description: 'vidalcofusta@gmail.com',
-										buttonText: 'Envíanos un email',
-										url: 'mailto:vidalcofusta@gmail.com'
-									},
-									{
-										imageUrl: FacebookImg,
-										imageDescription: 'Facebook logo',
-										title: 'Facebook',
-										description: '@vidalco fusta',
-										buttonText: 'Envíanos un MD',
-										url: 'https://www.facebook.com/vidalcofusta'
-									}
-								]
+								imageUrl: WhatsappImg,
+								imageDescription: 'Whatsapp logo',
+								title: 'Whatsapp',
+								description: '+34 622 88 13 50',
+								buttonText: 'Envíanos un mensaje',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl: GmailImg,
+								imageDescription: 'Gmail logo',
+								title: 'Correo electrónico',
+								description: 'vidalcofusta@gmail.com',
+								buttonText: 'Envíanos un email',
+								url: 'mailto:vidalcofusta@gmail.com'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl: FacebookImg,
+								imageDescription: 'Facebook logo',
+								title: 'Facebook',
+								description: '@vidalco fusta',
+								buttonText: 'Envíanos un MD',
+								url: 'https://www.facebook.com/vidalcofusta'
 							}
 						}
 					]

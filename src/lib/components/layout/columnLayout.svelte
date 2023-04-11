@@ -8,57 +8,68 @@
 	let columnsElement: any;
 
 	onMount(() => {
-		for (const column of new Array(columns).keys()) {
-			columnsElement.children[column].classList.add(`col--${columnsWidth[column]}`);
+		if (columnsWidth.length > 1) {
+			for (const column of new Array(columns).keys()) {
+				columnsElement.children[column].classList.add(`col--${columnsWidth[column]}`);
+			}
+		} else {
+			for (const children of columnsElement.children) {
+				children.classList.add(`col--${columnsWidth[0]}`);
+			}
 		}
 	});
 </script>
 
 <div
 	class="columns flex flex-row sm:flex-col sm:items-center gap-y-8"
-	style="gap: {gap * 10}px;"
+	style="--gap: {gap * 10}px; --columns: {columns};"
 	bind:this={columnsElement}
 >
 	<slot />
 </div>
 
 <style>
+	.columns {
+		gap: var(--gap);
+		flex-wrap: wrap;
+	}
+
 	@media screen and (min-width: 768px) {
 		:global(.col--1) {
-			width: 8.3333333333%;
+			width: calc(8.3333333333% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--2) {
-			width: 16.6666666667%;
+			width: calc(16.6666666667% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--3) {
-			width: 25%;
+			width: calc(25% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--4) {
-			width: 33.3333333333%;
+			width: calc(33.3333333333% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--5) {
-			width: 41.6666666667%;
+			width: calc(41.6666666667% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--6) {
-			width: 50%;
+			width: calc(50% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--7) {
-			width: 58.3333333333%;
+			width: calc(58.3333333333% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--8) {
-			width: 66.6666666667%;
+			width: calc(66.6666666667% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--9) {
-			width: 75%;
+			width: calc(75% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--10) {
-			width: 83.3333333333%;
+			width: calc(83.3333333333% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--11) {
-			width: 91.6666666667%;
+			width: calc(91.6666666667% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 		:global(.col--12) {
-			width: 100%;
+			width: calc(100% - var(--gap) * (var(--columns) - 1) / var(--columns));
 		}
 	}
 </style>

@@ -21,8 +21,11 @@
 	style:width
 	style:height
 >
-	<img src={imageUrl} alt={imageDescription} style:width style:height="100%" />
+	<img
+		src={imageUrl}
+		alt={imageDescription}
+		style:width
+		style:height="100%"
+		style:object-fit={cover ? 'cover' : 'contain'}
+	/>
 </div>
-
-<style>
-</style>

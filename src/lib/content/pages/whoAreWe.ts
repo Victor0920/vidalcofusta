@@ -41,31 +41,46 @@ const whoAreWePage: PageType = {
 			]
 		},
 		{
-			totalColumns: 1,
-			columnsWidth: [12],
+			totalColumns: 2,
+			columnsWidth: [5, 7],
 			sectionProperties: { background: '#ffffff', paddingTop: 0 },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'ImageAndText',
+							type: 'Image',
 							content: {
 								imageUrl: joseImg1,
-								imageDescription: 'imgUrl',
-								imagePosition: 'start',
-								text: {
-									title: {
-										size: 'medium',
-										text: 'Nuestra misión'
-									},
-									textColor: '#000000',
-									paragraphs: [
-										'Materializar en madera las ideas de nuestros clientes.',
-										'Ideas, diseño, materiales y servicio personalizado para conseguir un resultado único en el mundo.',
-										'Manteniendo siempre calidad, profesionalidad y cercanía.'
-									]
+								imageDescription: 'Imagen de Jose',
+								properties: {
+									width: '100%',
+									height: '300px',
+									rounded: true,
+									shadow: true
 								}
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Text',
+							content: {
+								title: {
+									size: 'medium',
+									text: 'Nuestra misión'
+								},
+								textColor: '#000000',
+								showLine: false,
+								textAlign: 'left',
+								paragraphs: [
+									'Materializar en madera las ideas de nuestros clientes.',
+									'Ideas, diseño, materiales y servicio personalizado para conseguir un resultado único en el mundo.',
+									'Manteniendo siempre calidad, profesionalidad y cercanía.'
+								]
 							}
 						}
 					]
@@ -96,38 +111,39 @@ const whoAreWePage: PageType = {
 			]
 		},
 		{
-			totalColumns: 1,
-			columnsWidth: [12],
+			totalColumns: 2,
+			columnsWidth: [6, 6],
 			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'Cards',
+							type: 'Card',
 							content: {
-								properties: {
-									columns: 2
-								},
-								cards: [
-									{
-										imageUrl: joseImg2,
-										imageDescription: 'Imagen de Jose',
-										title: 'Jose',
-										description:
-											'Carpintero, obrero y diseñador. Desde que surje la idea hasta que se pulen los detalles finales. Es el encargado de llevarlo a cabo.',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									},
-									{
-										imageUrl:
-											'https://thumbs.dreamstime.com/b/avatars-default-photo-placeholders-man-female-profile-vector-pictures-166601913.jpg',
-										imageDescription: 'Imagen de Víctor',
-										title: 'Víctor',
-										description:
-											'Programador de microcontroladores y diseñador web. Encargado de la programación y automatización.',
-										url: 'mailto:vidalcofusta@gmail.com'
-									}
-								]
+								imageUrl: joseImg2,
+								imageDescription: 'Imagen de Jose',
+								title: 'Jose',
+								description:
+									'Carpintero, obrero y diseñador. Desde que surje la idea hasta que se pulen los detalles finales. Es el encargado de llevarlo a cabo.',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl:
+									'https://thumbs.dreamstime.com/b/avatars-default-photo-placeholders-man-female-profile-vector-pictures-166601913.jpg',
+								imageDescription: 'Imagen de Víctor',
+								title: 'Víctor',
+								description:
+									'Programador de microcontroladores y diseñador web. Encargado de la programación y automatización.',
+								url: 'mailto:vidalcofusta@gmail.com'
 							}
 						}
 					]

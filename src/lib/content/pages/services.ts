@@ -39,64 +39,91 @@ const servicesPage: PageType = {
 			]
 		},
 		{
-			totalColumns: 1,
-			columnsWidth: [12],
+			totalColumns: 3,
+			columnsWidth: [4],
 			sectionProperties: { background: '#f3f1e9' },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
 						{
-							type: 'Cards',
+							type: 'Card',
 							content: {
-								properties: {},
-								cards: [
-									{
-										imageUrl: mesaImg,
-										imageDescription: 'Mesa de resina',
-										title: 'Mesas a medida',
-										description:
-											'Mesas de comedor, de centro, de bar, de cocina, de estudio, de trabajo, de reunión, de juego, de jardín, de terraza...',
-										buttonText: 'Más información',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									},
-									{
-										imageUrl: mesaImg,
-										imageDescription: 'Mesa de resina',
-										title: 'Puertas a medida',
-										description:
-											'Elit magna fugiat occaecat pariatur. Minim aliqua ex fugiat aliquip ullamco mollit proident fugiat non.',
-										buttonText: 'Más información',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									},
-									{
-										imageUrl: mesaImg,
-										imageDescription: 'Mesa de resina',
-										title: 'Estructuras de gran tamaño',
-										description:
-											'Elit magna fugiat occaecat pariatur. Minim aliqua ex fugiat aliquip ullamco mollit proident fugiat non.',
-										buttonText: 'Más información',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									},
-									{
-										imageUrl: mesaImg,
-										imageDescription: 'Decoración de interiores',
-										title: 'Decoración de interiores',
-										description:
-											'Elit magna fugiat occaecat pariatur. Minim aliqua ex fugiat aliquip ullamco mollit proident fugiat non.',
-										buttonText: 'Más información',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									},
-									{
-										imageUrl: mesaImg,
-										imageDescription: 'Decoración de exteriores',
-										title: 'Decoración de exteriores',
-										description:
-											'Elit magna fugiat occaecat pariatur. Minim aliqua ex fugiat aliquip ullamco mollit proident fugiat non.',
-										buttonText: 'Más información',
-										url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
-									}
-								]
+								imageUrl: mesaImg,
+								imageDescription: 'Mesa de resina',
+								title: 'Mesas a medida',
+								description:
+									'Mesas de comedor, de centro, de bar, de cocina, de estudio, de trabajo, de reunión, de juego, de jardín, de terraza...',
+								buttonText: 'Más información',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl: mesaImg,
+								imageDescription: 'Mesa de resina',
+								title: 'Mesas a medida',
+								description:
+									'Mesas de comedor, de centro, de bar, de cocina, de estudio, de trabajo, de reunión, de juego, de jardín, de terraza...',
+								buttonText: 'Más información',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl: mesaImg,
+								imageDescription: 'Mesa de resina',
+								title: 'Mesas a medida',
+								description:
+									'Mesas de comedor, de centro, de bar, de cocina, de estudio, de trabajo, de reunión, de juego, de jardín, de terraza...',
+								buttonText: 'Más información',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl: mesaImg,
+								imageDescription: 'Mesa de resina',
+								title: 'Mesas a medida',
+								description:
+									'Mesas de comedor, de centro, de bar, de cocina, de estudio, de trabajo, de reunión, de juego, de jardín, de terraza...',
+								buttonText: 'Más información',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
+							}
+						}
+					]
+				},
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Card',
+							content: {
+								imageUrl: mesaImg,
+								imageDescription: 'Mesa de resina',
+								title: 'Mesas a medida',
+								description:
+									'Mesas de comedor, de centro, de bar, de cocina, de estudio, de trabajo, de reunión, de juego, de jardín, de terraza...',
+								buttonText: 'Más información',
+								url: 'https://wa.me/+34622881350?text=Hola,+buenos+días'
 							}
 						}
 					]
