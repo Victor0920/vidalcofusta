@@ -10,7 +10,11 @@
 	{#if title}
 		<h1
 			class={`relative font-bold sm:text-center ${showLine ? "after:content-[''] mb-7" : 'mb-4'} ${
-				title.size === 'large' ? 'text-3xl' : title.size === 'medium' ? 'text-2xl' : 'text-xl'
+				title.size === 'large'
+					? 'text-3xl mb-7'
+					: title.size === 'medium'
+					? 'text-2xl mb-7'
+					: 'text-xl mb-3'
 			}`}
 			style:color={textColor}
 		>

@@ -8,7 +8,7 @@
 </script>
 
 <a
-	class="flex flex-col w-full shadow-lg rounded-md overflow-hidden hover:scale-[103%] hover:shadow-2xl bg-white transition-all duration-200 group"
+	class="flex flex-col w-full shadow-lg rounded-md overflow-hidden hover:scale-[103%] hover:shadow-2xl active:scale-[98%] active:shadow-xl bg-white transition-all duration-200 group"
 	{...url ? { href: url } : {}}
 >
 	{#if imageUrl}
