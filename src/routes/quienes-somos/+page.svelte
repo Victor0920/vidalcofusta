@@ -20,19 +20,20 @@
 	title={meta.title}
 	subtitle={meta.description}
 />
-
-{#each pageSections as section}
-	<PageSection properties={section.sectionProperties}>
-		<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
-			{#each section.columns as column}
-				<RowsLayout gap={column.rowProperties?.gap}>
-					{#each column.rows as content}
-						<div style:width="100%" style:height="100%">
-							<Component component={content} />
-						</div>
-					{/each}
-				</RowsLayout>
-			{/each}
-		</ColumnLayout>
-	</PageSection>
-{/each}
+<div style:background="white">
+	{#each pageSections as section}
+		<PageSection properties={section.sectionProperties}>
+			<ColumnLayout columns={section.totalColumns} columnsWidth={section.columnsWidth}>
+				{#each section.columns as column}
+					<RowsLayout gap={column.rowProperties?.gap}>
+						{#each column.rows as content}
+							<div style:width="100%" style:height="100%">
+								<Component component={content} />
+							</div>
+						{/each}
+					</RowsLayout>
+				{/each}
+			</ColumnLayout>
+		</PageSection>
+	{/each}
+</div>

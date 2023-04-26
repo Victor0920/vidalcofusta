@@ -1,8 +1,6 @@
 import { findAllProjectPages, findPage } from '$lib/server/secrets';
 import type { PageServerLoad } from './$types';
 
-// import type { CardType } from '$lib/types';
-
 export const load: PageServerLoad = async ({ route }) => {
 	const galleryPage = await findPage(route.id);
 
