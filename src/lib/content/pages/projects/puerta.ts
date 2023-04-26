@@ -178,6 +178,26 @@ const puerta: PageType = {
 					]
 				}
 			]
+		},
+		{
+			totalColumns: 1,
+			columnsWidth: [12],
+			sectionProperties: { background: '#f3f1e9', paddingTop: 1 },
+			columns: [
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Button',
+							content: {
+								text: 'Solicita un presupuesto para tu puerta',
+								theme: 'blue',
+								url: '/contacto#contactMethods'
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 };
