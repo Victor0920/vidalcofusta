@@ -1,6 +1,7 @@
 // This file can only be improtable in +page.server.ts files
 import { pages } from '$lib/content/pages';
-import { pages as projectPages } from '$lib/content/pages/projects';
+import projectsPages from '$lib/content/pages/projects';
+import servicesPages from '$lib/content/pages/services';
 import type { PageType } from '$lib/types';
 
 const findPage = async (url: string): Promise<PageType> => {
@@ -17,7 +18,7 @@ const findPage = async (url: string): Promise<PageType> => {
 
 const findProjectPage = async (url: string): Promise<PageType> => {
 	return new Promise(async (res, rej) => {
-		let projectPage = projectPages.find((page) => page.url === url);
+		let projectPage = projectsPages.find((page) => page.url === url);
 
 		if (projectPage) {
 			res(projectPage);
@@ -29,12 +30,34 @@ const findProjectPage = async (url: string): Promise<PageType> => {
 
 const findAllProjectPages = async (): Promise<PageType[]> => {
 	return new Promise(async (res, rej) => {
-		if (projectPages) {
-			res(projectPages);
+		if (projectsPages) {
+			res(projectsPages);
 		} else {
 			rej([]);
 		}
 	});
 };
 
-export { findPage, findProjectPage, findAllProjectPages };
+const findServicePage = async (url: string): Promise<PageType> => {
+	return new Promise(async (res, rej) => {
+		let servicePage = servicesPages.find((page) => page.url === url);
+
+		if (servicePage) {
+			res(servicePage);
+		} else {
+			rej(pages.find((page) => page.name === '404'));
+		}
+	});
+};
+
+const findAllServicesPages = async (): Promise<PageType[]> => {
+	return new Promise(async (res, rej) => {
+		if (servicesPages) {
+			res(servicesPages);
+		} else {
+			rej([]);
+		}
+	});
+};
+
+export { findPage, findProjectPage, findAllProjectPages, findServicePage, findAllServicesPages };
