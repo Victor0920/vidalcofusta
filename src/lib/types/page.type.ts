@@ -45,6 +45,7 @@ export type PageSectionProperties = {
 	paddingTop?: number;
 	paddingBottom?: number;
 	background?: string;
+	id?: string;
 };
 
 type ButtonComponent = {
