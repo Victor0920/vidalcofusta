@@ -195,7 +195,7 @@ const puerta: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
+			sectionProperties: { background: '#f3f1e9', paddingTop: 4 },
 			columns: [
 				{
 					rowProperties: {},

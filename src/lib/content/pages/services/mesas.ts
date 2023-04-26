@@ -198,7 +198,7 @@ const mesas: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
+			sectionProperties: { background: '#f3f1e9', paddingTop: 4 },
 			columns: [
 				{
 					rowProperties: {},
@@ -206,7 +206,7 @@ const mesas: PageType = {
 						{
 							type: 'Button',
 							content: {
-								text: 'Solicita un presupuesto para tu mesa',
+								text: 'Solicita un presupuesto',
 								theme: 'blue',
 								url: '/contacto#contactMethods'
 							}
