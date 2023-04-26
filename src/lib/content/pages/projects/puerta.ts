@@ -9,7 +9,7 @@ import puertaIcon from '$lib/assets/puerta_icon.png';
 const puerta: PageType = {
 	id: 'p3',
 	name: 'puerta',
-	url: '/galeria/puerta',
+	url: '/proyectos/puerta',
 	meta: {
 		title: 'Portón de entrada',
 		description: 'Puerta triple para la entrada de personas y vehículos.',
@@ -139,11 +139,24 @@ const puerta: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9' },
+			sectionProperties: { background: '#f3f1e9', paddingBottom: 8 },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
+						{
+							type: 'Text',
+							content: {
+								title: {
+									size: 'medium',
+									text: 'Galería'
+								},
+								paragraphs: [],
+								textColor: '#000000',
+								showLine: false,
+								textAlign: 'left'
+							}
+						},
 						{
 							type: 'ImageCaroussel',
 							content: {
@@ -182,7 +195,7 @@ const puerta: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 1 },
+			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
 			columns: [
 				{
 					rowProperties: {},
@@ -190,7 +203,7 @@ const puerta: PageType = {
 						{
 							type: 'Button',
 							content: {
-								text: 'Solicita un presupuesto para tu puerta',
+								text: 'Solicita un presupuesto',
 								theme: 'blue',
 								url: '/contacto#contactMethods'
 							}

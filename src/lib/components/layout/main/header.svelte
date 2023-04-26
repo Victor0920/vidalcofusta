@@ -16,8 +16,8 @@
 			url: '/servicios'
 		},
 		{
-			text: 'Galería',
-			url: '/galeria'
+			text: 'Proyectos',
+			url: '/proyectos'
 		},
 		{
 			text: 'Contacto',
