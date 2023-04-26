@@ -142,11 +142,24 @@ const mesas: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9' },
+			sectionProperties: { background: '#f3f1e9', paddingBottom: 8 },
 			columns: [
 				{
 					rowProperties: {},
 					rows: [
+						{
+							type: 'Text',
+							content: {
+								title: {
+									size: 'medium',
+									text: 'Galería'
+								},
+								paragraphs: [],
+								textColor: '#000000',
+								showLine: false,
+								textAlign: 'left'
+							}
+						},
 						{
 							type: 'ImageCaroussel',
 							content: {
@@ -185,7 +198,7 @@ const mesas: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 1 },
+			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
 			columns: [
 				{
 					rowProperties: {},

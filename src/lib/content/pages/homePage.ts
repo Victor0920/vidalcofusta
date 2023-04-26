@@ -23,6 +23,31 @@ const HomePage: PageType = {
 	},
 	pageSections: [
 		{
+			totalColumns: 1,
+			columnsWidth: [12],
+			sectionProperties: { background: '#ffffff', paddingBottom: 12 },
+			columns: [
+				{
+					rowProperties: {},
+					rows: [
+						{
+							type: 'Text',
+							content: {
+								textColor: '#000000',
+								title: {
+									size: 'medium',
+									text: 'Desde 2012 realizando infinidad de proyectos diferentes'
+								},
+								paragraphs: [
+									'Sunt ex enim commodo deserunt. Officia commodo ut esse duis adipisicing incididunt aliquip pariatur excepteur id pariatur sit aliqua. Et labore velit aliquip aute nostrud esse in veniam aliquip id officia pariatur. Velit ullamco labore cillum est labore adipisicing laboris enim irure anim. Lorem labore esse ex commodo.'
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
 			totalColumns: 2,
 			columnsWidth: [6, 6],
 			sectionProperties: { background: '#f3f1e9' },
@@ -342,7 +367,7 @@ const HomePage: PageType = {
 							content: {
 								text: 'Ver todos los proyectos',
 								theme: 'blue',
-								url: '/galeria'
+								url: '/proyectos'
 							}
 						}
 					]
