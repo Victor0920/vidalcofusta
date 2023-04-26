@@ -1,5 +1,5 @@
 import type { PageType } from '$lib/types';
-import carpentryImg from '$lib/assets/carpentry4.webp';
+import carpentryImg from '$lib/assets/carpentry10.webp';
 import WhatsappImg from '$lib/assets/contact/whatsapp.png';
 import FacebookImg from '$lib/assets/contact/facebook.png';
 import GmailImg from '$lib/assets/contact/mail.png';
@@ -44,7 +44,7 @@ const contactPage: PageType = {
 		{
 			totalColumns: 3,
 			columnsWidth: [4, 4, 4],
-			sectionProperties: { background: '#f3f1e9' },
+			sectionProperties: { background: '#f3f1e9', id: 'contactMethods' },
 			columns: [
 				{
 					rowProperties: {},

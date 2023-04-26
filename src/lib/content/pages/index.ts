@@ -1,8 +1,8 @@
-import ContactPage from './contact';
-import GalleryPage from './gallery';
-import HomePage from './home';
-import NotFoundPage from './404';
-import servicesPage from './services';
-import whoAreWePage from './whoAreWe';
+import ContactPage from './contactPage';
+import GalleryPage from './galleryPage';
+import HomePage from './homePage';
+import NotFoundPage from './404Page';
+import servicesPage from './servicesPage';
+import whoAreWePage from './whoAreWePage';
 
 export const pages = [ContactPage, GalleryPage, HomePage, NotFoundPage, servicesPage, whoAreWePage];

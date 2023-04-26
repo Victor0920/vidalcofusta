@@ -1,5 +1,5 @@
 import type { PageType } from '$lib/types';
-import carpentryImg from '$lib/assets/carpentry3.webp';
+import carpentryImg from '$lib/assets/carpentry12.webp';
 import joseImg1 from '$lib/assets/jose2.jpg';
 import joseImg2 from '$lib/assets/jose.jpg';
 
@@ -151,30 +151,7 @@ const whoAreWePage: PageType = {
 		{
 			totalColumns: 1,
 			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 0, paddingBottom: 0 },
-			columns: [
-				{
-					rowProperties: {},
-					rows: [
-						{
-							type: 'Text',
-							content: {
-								textColor: '#000000',
-								title: {
-									size: 'small',
-									text: 'Contacta con nosotros'
-								},
-								paragraphs: []
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			totalColumns: 1,
-			columnsWidth: [12],
-			sectionProperties: { background: '#f3f1e9', paddingTop: 0 },
+			sectionProperties: { background: '#f3f1e9', paddingTop: 1 },
 			columns: [
 				{
 					rowProperties: {},
@@ -182,8 +159,8 @@ const whoAreWePage: PageType = {
 						{
 							type: 'Button',
 							content: {
-								text: 'Contacto',
-								theme: 'red',
+								text: 'Contacta con nosotros',
+								theme: 'blue',
 								url: '/contacto'
 							}
 						}
