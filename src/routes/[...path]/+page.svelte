@@ -3,10 +3,9 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	const galleryPage = data.page;
-
-	$: meta = galleryPage.meta;
-	$: pageSections = galleryPage.pageSections;
+	$: page = data.page;
+	$: meta = page.meta;
+	$: pageSections = page.pageSections;
 </script>
 
 <svelte:head>
