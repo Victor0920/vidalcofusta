@@ -29,7 +29,7 @@ const contactPage: PageType = {
 									text: 'Proyectos únicos, para todos'
 								},
 								paragraphs: [
-									'No nos cerramos a nada. Hemos proyectos de todo tipo y de toda clase. A continuación mostramos una pequeña recopilación de algunos de nuestros trabajos.'
+									'No nos cerramos a nada. Hacemos proyectos de todo tipo y de toda clase. A continuación mostramos una pequeña recopilación de algunos de nuestros trabajos.'
 								]
 							}
 						}

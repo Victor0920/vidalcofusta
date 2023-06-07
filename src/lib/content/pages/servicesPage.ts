@@ -29,7 +29,7 @@ const servicesPage: PageType = {
 									text: 'Nuestras especialidades'
 								},
 								paragraphs: [
-									'No nos cerramos a nada. Aceptamos proyectos de todo tipo y de toda clase. Sin embargo, nos especializamos en los siguientes campos: Mesas, muebles a medida, estructuras, barras de bar y elementos decorativos.'
+									'No nos cerramos a nada. Aceptamos proyectos de todo tipo y de toda clase. Sin embargo, nos especializamos en los siguientes campos.'
 								]
 							}
 						}
