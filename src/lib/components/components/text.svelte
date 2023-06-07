@@ -3,7 +3,7 @@
 
 	export let content: TextType;
 
-	const { title, paragraphs, textColor, showLine = true, textAlign } = content;
+	$: ({ title, paragraphs, textColor, showLine = true, textAlign } = content);
 </script>
 
 <div class="flex flex-col justify-center w-full h-full" style:text-align={textAlign}>

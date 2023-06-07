@@ -3,7 +3,7 @@
 
 	export let content: ImageType;
 
-	let { imageUrl, imageDescription, properties } = content;
+	$: ({ imageUrl, imageDescription, properties } = content);
 
 	const {
 		rounded = true,

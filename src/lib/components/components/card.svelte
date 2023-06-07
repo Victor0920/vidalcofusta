@@ -4,7 +4,7 @@
 
 	export let content: CardType;
 
-	let { imageUrl, imageDescription, title, description, buttonText, url = null } = content;
+	$: ({ imageUrl, imageDescription, title, description, buttonText, url = null } = content);
 </script>
 
 <a

@@ -3,7 +3,7 @@
 	import type { ImageCarrouselType } from '$lib/types';
 
 	export let content: ImageCarrouselType;
-	let { images } = content;
+	$: ({ images } = content);
 
 	let expandedIndex: number = -1;
 

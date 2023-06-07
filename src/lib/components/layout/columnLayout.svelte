@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, afterUpdate } from 'svelte';
 
 	export let columns: number;
 	export let columnsWidth: (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12)[];
@@ -7,14 +7,16 @@
 
 	let columnsElement: any;
 
-	onMount(() => {
-		if (columnsWidth.length > 1) {
+	afterUpdate(() => {
+		if (columnsElement?.children?.length === columns) {
 			for (const column of new Array(columns).keys()) {
+				const currentClass = columnsElement.children[column].className.match(/col--\w+/g);
+
+				if (currentClass) {
+					columnsElement.children[column].classList.remove(currentClass[0]);
+				}
+
 				columnsElement.children[column].classList.add(`col--${columnsWidth[column]}`);
-			}
-		} else {
-			for (const children of columnsElement.children) {
-				children.classList.add(`col--${columnsWidth[0]}`);
 			}
 		}
 	});

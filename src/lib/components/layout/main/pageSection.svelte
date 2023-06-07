@@ -3,7 +3,7 @@
 
 	export let properties: PageSectionProperties;
 
-	const { paddingTop = 16, paddingBottom = 16, background = '#ffffff', id } = properties;
+	$: ({ paddingTop = 16, paddingBottom = 16, background = '#ffffff', id } = properties);
 </script>
 
 <div

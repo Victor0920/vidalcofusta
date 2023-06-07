@@ -3,7 +3,7 @@
 
 	export let content: ButtonType;
 
-	let { text, theme, url } = content;
+	$: ({ text, theme, url } = content);
 
 	$: themeColor =
 		theme === 'red'
